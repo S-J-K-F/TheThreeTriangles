@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgfsauc6rgbln"]
+
+[ext_resource type="Texture2D" uid="uid://onrln824hm3q" path="res://Assets/Sprites/maincharacterwalk.png" id="1_kt03r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0th06"]
+atlas = ExtResource("1_kt03r")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pvxhj"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0th06")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}]
+
+[node name="Player" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+sprite_frames = SubResource("SpriteFrames_pvxhj")
+animation = &"down"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
