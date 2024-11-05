@@ -13,4 +13,14 @@ func _physics_process(delta: float) -> void:
 
 	func update_animation(motion: Vector2) -> void:
 		var animation = "idle"
-		pass
+		if motion.x > 0:
+			animation = "right"
+		elif motion.x < 0:
+			animation = "left"
+		elif motion.y < 0:
+			animation = "up"
+		elif motion.y > 0:
+			animation = "down"
+
+		if animated_sprite.animation != animation:
+			animated_sprite.play(animation)
