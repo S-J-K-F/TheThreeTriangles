@@ -12,8 +12,7 @@
 
 
 # jfeatherston09:
-- Made sprites for the three triangles and the main character
-- Coded the main character's scene
+- Made sprites for the three triangles and the main character(head frame and walk cycles)
 
 
 
