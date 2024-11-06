@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2x4wkf7jddb3"
-path="res://.godot/imported/roguelikedungeon_transparent.png-75a420c176d9c0fd212eb18d64ad1a10.ctex"
+uid="uid://dsj4hmc8x7f0c"
+path="res://.godot/imported/MainCharacterWalking.png-bcf3675caa1a7ebcfd1e4db9fd2edd0c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileMap/roguelikedungeon_transparent.png"
-dest_files=["res://.godot/imported/roguelikedungeon_transparent.png-75a420c176d9c0fd212eb18d64ad1a10.ctex"]
+source_file="res://Entities/MainCharacterWalking.png"
+dest_files=["res://.godot/imported/MainCharacterWalking.png-bcf3675caa1a7ebcfd1e4db9fd2edd0c.ctex"]
 
 [params]
 
