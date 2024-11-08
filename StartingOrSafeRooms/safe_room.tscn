@@ -207,3 +207,6 @@ sources/0 = SubResource("TileSetAtlasSource_tt58m")
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_1pdj1")
 format = 2
+layer_1/name = "Layer1"
+layer_2/name = "Layer2"
+layer_3/name = "Layer3"
