@@ -1,0 +1,13 @@
+Completed Tasks:
+-rlemke - update template repo
+-rlemke - added firing document to drive
+
+Roadblocks:
+-none
+
+Pivots:
+-rlemke - had to update project description because students want to make projects that aren't school-appropriate
+-rlemke - add more check-ins mid-project so students receive more feedback and opportunities for improvement
+
+Concerns:
+-rlemke - first time teaching this class, not sure if I'm forgetting anything
