@@ -1,11 +1,32 @@
-[gd_scene load_steps=3 format=3 uid="uid://degxksk82p8yw"]
+[gd_scene load_steps=4 format=3 uid="uid://degxksk82p8yw"]
 
-[ext_resource type="Script" path="res://Scripts/player.gd" id="1_13kub"]
-[ext_resource type="Texture2D" uid="uid://b4nm2vvdn113n" path="res://Entities/images.png" id="2_cgl3n"]
+[ext_resource type="Script" path="res://Entities/player.gd" id="1_iwvtn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_j8bmd"]
+radius = 121.655
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f50bx"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
 
 [node name="Player" type="Node2D"]
-script = ExtResource("1_13kub")
 
-[node name="Sprite" type="Sprite2D" parent="."]
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("2_cgl3n")
+[node name="Player" type="CharacterBody2D" parent="."]
+motion_mode = 1
+script = ExtResource("1_iwvtn")
+speed = null
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(2, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("CircleShape2D_j8bmd")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+sprite_frames = SubResource("SpriteFrames_f50bx")
+animation = &"Idle"
