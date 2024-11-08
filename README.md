@@ -13,6 +13,7 @@
 
 # jfeatherston09:
 - Made sprites for the three triangles and the main character(head frame and walk cycles)
+- Made The First Nightmare Room
 
 
 
