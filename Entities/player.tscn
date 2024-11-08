@@ -9,7 +9,42 @@ radius = 121.655
 animations = [{
 "frames": [],
 "loop": true,
-"name": &"Idle",
+"name": &"IdleDown",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"IdleLeft",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"IdleRight",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"IdleUp",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"WalkDown",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"WalkLeft",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"WalkRight",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"WalkUp",
 "speed": 5.0
 }]
 
@@ -29,4 +64,4 @@ shape = SubResource("CircleShape2D_j8bmd")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
 sprite_frames = SubResource("SpriteFrames_f50bx")
-animation = &"Idle"
+animation = &"WalkUp"
