@@ -2,7 +2,7 @@
 - Created all the scenes needed for now
 - Added most of the sprites needed for now
 - Fixed the tilmaps not being in the correct places and not fully implemented
-
+- Basic player movement is in
 
 
 
