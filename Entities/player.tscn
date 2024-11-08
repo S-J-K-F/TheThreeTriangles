@@ -3,9 +3,6 @@
 [ext_resource type="Script" path="res://Entities/player.gd" id="1_iwvtn"]
 [ext_resource type="Texture2D" uid="uid://1ivtxgke6bxd" path="res://Entities/maincharacterwalk.png" id="2_qxlkc"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_j8bmd"]
-radius = 121.655
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_u5sck"]
 atlas = ExtResource("2_qxlkc")
 region = Rect2(48, 0, 48, 48)
@@ -161,6 +158,10 @@ animations = [{
 "speed": 3.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4t8sd"]
+radius = 35.0401
+height = 99.9966
+
 [node name="Player" type="Node2D"]
 
 [node name="Player" type="CharacterBody2D" parent="."]
@@ -171,10 +172,13 @@ speed = null
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(2, 2)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-scale = Vector2(0.2, 0.2)
-shape = SubResource("CircleShape2D_j8bmd")
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_f50bx")
-animation = &"WalkUp"
+animation = &"IdleDown"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(0, 16)
+rotation = -1.57905
+scale = Vector2(0.2, 0.2)
+shape = SubResource("CapsuleShape2D_4t8sd")
