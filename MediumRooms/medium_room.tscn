@@ -2,8 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://65rw2eo3b3c2" path="res://Tiles/Medium.png" id="1_s8d8i"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kr3eg"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dm3ih"]
 texture = ExtResource("1_s8d8i")
+separation = Vector2i(1, 1)
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -573,14 +574,11 @@ texture = ExtResource("1_s8d8i")
 28:18/0 = 0
 29:18/0 = 0
 
-[sub_resource type="TileSet" id="TileSet_lb7w3"]
-sources/0 = SubResource("TileSetAtlasSource_kr3eg")
+[sub_resource type="TileSet" id="TileSet_25tod"]
+sources/1 = SubResource("TileSetAtlasSource_dm3ih")
 
 [node name="Medium Room" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
-tile_set = SubResource("TileSet_lb7w3")
+tile_set = SubResource("TileSet_25tod")
 format = 2
-layer_1/name = "Layer1"
-layer_2/name = "Layer2"
-layer_3/name = "Layer3"
