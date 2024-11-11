@@ -214,6 +214,7 @@ layer_1/tile_data = PackedInt32Array(-262145, 458752, 1, -196609, 458752, 2, -13
 layer_2/name = "Layer2"
 layer_2/tile_data = PackedInt32Array(-131065, 983040, 10, -327659, 720896, 0, -262123, 720896, 1, -196587, 720896, 2, -327658, 786432, 0, -262122, 786432, 1, -196586, 786432, 2, -131051, 0, 10, -131050, 131072, 10, 458777, 851968, 14)
 layer_3/name = "Layer3"
+layer_3/tile_data = PackedInt32Array(-131051, 917504, 13, -131050, 917504, 13)
 
 [node name="Darkness" type="Node" parent="."]
 
