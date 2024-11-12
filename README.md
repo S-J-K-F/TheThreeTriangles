@@ -4,6 +4,7 @@
 - Fixed the tilmaps not being in the correct places and not fully implemented
 - Basic player movement is in
 - Completed most of the safe rooms. Fixed tile sets for medium rooms.
+- Final room layout completed.
 
 
 
