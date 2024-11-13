@@ -5,6 +5,7 @@
 - Basic player movement is in
 - Completed most of the safe rooms. Fixed tile sets for medium rooms.
 - Final room layout completed.
+- Collision added to rooms.
 
 
 
