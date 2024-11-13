@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dhuif0lntdgx8"]
+[gd_scene load_steps=7 format=3 uid="uid://dhuif0lntdgx8"]
 
 [ext_resource type="Texture2D" uid="uid://5qi54kmoqqp4" path="res://Tiles/Safe.png" id="1_o0uus"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="2_oc846"]
@@ -290,6 +290,9 @@ texture = ExtResource("1_o0uus")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_bqadq")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vtgs3"]
+size = Vector2(203, 157)
+
 [node name="Starting Room" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -340,3 +343,7 @@ texture = ExtResource("3_aorc4")
 position = Vector2(-432.701, 132.5)
 scale = Vector2(3.55821, 2.44889)
 texture = ExtResource("3_aorc4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(303.5, 47.5)
+shape = SubResource("RectangleShape2D_vtgs3")
