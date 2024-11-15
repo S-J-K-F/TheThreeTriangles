@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://dhuif0lntdgx8"]
+
+[gd_scene load_steps=6 format=3 uid="uid://dhuif0lntdgx8"]
+
 
 [ext_resource type="Texture2D" uid="uid://5qi54kmoqqp4" path="res://Tiles/Safe.png" id="1_o0uus"]
-[ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="2_oc846"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Entities/images.jpg" id="3_aorc4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bqadq"]
@@ -290,9 +291,6 @@ texture = ExtResource("1_o0uus")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_bqadq")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vtgs3"]
-size = Vector2(203, 157)
-
 [node name="Starting Room" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -305,12 +303,6 @@ layer_2/name = "Layer2"
 layer_2/tile_data = PackedInt32Array(-327659, 720896, 0, -262123, 720896, 1, -196587, 720896, 2, -327658, 786432, 0, -262122, 786432, 1, -196586, 786432, 2, -65531, 983040, 10, -131051, 917504, 13, -131050, 917504, 13, -327672, 524288, 0, -262136, 524288, 1, -327671, 589824, 0, -262135, 589824, 1, -327670, 655360, 0, -262134, 655360, 1, -327664, 524288, 0, -262128, 524288, 1, -327663, 589824, 0, -262127, 589824, 1, -327662, 655360, 0, -262126, 655360, 1, -327654, 524288, 0, -262118, 524288, 1, -327653, 589824, 0, -262117, 589824, 1, -327652, 655360, 0, -262116, 655360, 1, 196616, 0, 8, 262152, 0, 9, 327688, 0, 10, 196617, 65536, 8, 262153, 65536, 9, 327689, 65536, 10, 196618, 65536, 8, 262154, 65536, 9, 327690, 65536, 10, 196619, 65536, 8, 262155, 65536, 9, 327691, 65536, 10, 196620, 65536, 8, 262156, 65536, 9, 327692, 65536, 10, 196621, 65536, 8, 262157, 65536, 9, 327693, 65536, 10, 196622, 65536, 8, 262158, 65536, 9, 327694, 65536, 10, 196623, 65536, 8, 262159, 65536, 9, 327695, 65536, 10, 196624, 65536, 8, 262160, 65536, 9, 327696, 65536, 10, 196625, 131072, 8, 262161, 131072, 9, 327697, 131072, 10, -196594, 917504, 9, -131058, 917504, 10, -327666, 917504, 7, -262130, 917504, 8, -327667, 917504, 7, -262131, 917504, 8, -196595, 917504, 9, -131059, 917504, 10, -327668, 917504, 7, -262132, 917504, 8, -196596, 917504, 9, -131060, 917504, 10, -131047, 983040, 14)
 layer_3/name = "Layer3"
 layer_3/tile_data = PackedInt32Array(-131046, 524288, 3, -65510, 524288, 4, -131045, 589824, 3, -65509, 589824, 4, -131044, 655360, 3, -65508, 655360, 4, -131064, 524288, 3, -65528, 524288, 4, -131063, 589824, 3, -65527, 589824, 4, -131062, 655360, 3, -65526, 655360, 4, -131056, 524288, 3, -65520, 524288, 4, -131055, 589824, 3, -65519, 589824, 4, -131054, 655360, 3, -65518, 655360, 4)
-
-[node name="Player" parent="." instance=ExtResource("2_oc846")]
-position = Vector2(87, 47)
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-zoom = Vector2(2, 2)
 
 [node name="Darkness" type="Node" parent="."]
 
@@ -344,6 +336,7 @@ position = Vector2(-432.701, 132.5)
 scale = Vector2(3.55821, 2.44889)
 texture = ExtResource("3_aorc4")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(303.5, 47.5)
-shape = SubResource("RectangleShape2D_vtgs3")
+
+[node name="Player" parent="." instance=ExtResource("2_oc846")]
+position = Vector2(57, 58)
+
