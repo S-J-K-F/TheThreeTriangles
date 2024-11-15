@@ -113,7 +113,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"WalkDown",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -174,7 +174,8 @@ zoom = Vector2(2, 2)
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_f50bx")
-animation = &"WalkDown"
+animation = &"IdleDown"
+frame_progress = 0.855149
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2(-1, 16)
