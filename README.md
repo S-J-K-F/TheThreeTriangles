@@ -1,3 +1,4 @@
+(Description, instructions and gameplay features chosen at the bottom)
 # S-J-K-F/Wolfie-K:
 - Created all the scenes needed for now
 - Added most of the sprites needed for now
@@ -57,3 +58,9 @@
 
 
 
+
+# Description:
+
+# Instructions (How to test each of the chosen features and where to find the related scenes and scripts for each feature):
+
+# Instructions (Where to find examples of each OOP concept and Godot feature)
