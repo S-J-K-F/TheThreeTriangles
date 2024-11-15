@@ -62,5 +62,23 @@
 # Description:
 
 # Instructions (How to test each of the chosen features and where to find the related scenes and scripts for each feature):
+- Movement and Collisions:
+
+- Enemies and Traps:
+
+- Tilemaps and Worldbuilding:
+
+- Dialogue:
+
+- GUI (Health, action bar, pause menu, inventory, and dialogue selection):
 
 # Instructions (Where to find examples of each OOP concept and Godot feature)
+- Inheritance:
+
+- Encapsulation:
+
+- Polymorphism:
+
+- Abstraction:
+
+- Godot Features (Shaders && resources):
