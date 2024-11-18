@@ -11,14 +11,9 @@ config_version=5
 [application]
 
 config/name="TreeTriAngle"
-run/main_scene="res://StartingOrSafeRooms/starting_room.tscn"
+run/main_scene="res://StartingOrSafeRooms/final_room.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
-
-[display]
-
-window/size/viewport_width=576
-window/size/viewport_height=204
 
 [input]
 

@@ -1,7 +1,8 @@
+
 [gd_scene load_steps=6 format=3 uid="uid://dhuif0lntdgx8"]
 
+
 [ext_resource type="Texture2D" uid="uid://5qi54kmoqqp4" path="res://Tiles/Safe.png" id="1_o0uus"]
-[ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="2_oc846"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Entities/images.jpg" id="3_aorc4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bqadq"]
@@ -303,12 +304,6 @@ layer_2/tile_data = PackedInt32Array(-327659, 720896, 0, -262123, 720896, 1, -19
 layer_3/name = "Layer3"
 layer_3/tile_data = PackedInt32Array(-131046, 524288, 3, -65510, 524288, 4, -131045, 589824, 3, -65509, 589824, 4, -131044, 655360, 3, -65508, 655360, 4, -131064, 524288, 3, -65528, 524288, 4, -131063, 589824, 3, -65527, 589824, 4, -131062, 655360, 3, -65526, 655360, 4, -131056, 524288, 3, -65520, 524288, 4, -131055, 589824, 3, -65519, 589824, 4, -131054, 655360, 3, -65518, 655360, 4)
 
-[node name="Player" parent="." instance=ExtResource("2_oc846")]
-position = Vector2(87, 47)
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-zoom = Vector2(2, 2)
-
 [node name="Darkness" type="Node" parent="."]
 
 [node name="Images" type="Sprite2D" parent="Darkness"]
@@ -340,3 +335,8 @@ texture = ExtResource("3_aorc4")
 position = Vector2(-432.701, 132.5)
 scale = Vector2(3.55821, 2.44889)
 texture = ExtResource("3_aorc4")
+
+
+[node name="Player" parent="." instance=ExtResource("2_oc846")]
+position = Vector2(57, 58)
+

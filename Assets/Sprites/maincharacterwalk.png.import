@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btrs0mhjwrtw0"
-path="res://.godot/imported/Set_C_Interiors.png-77a624ab2379986912574ceb47b2cca0.ctex"
+uid="uid://b0eldyhv6rgtd"
+path="res://.godot/imported/maincharacterwalk.png-9f996da599ecb48eacb1463a2bc0d832.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tiles/Set_C_Interiors.png"
-dest_files=["res://.godot/imported/Set_C_Interiors.png-77a624ab2379986912574ceb47b2cca0.ctex"]
+source_file="res://Assets/Sprites/maincharacterwalk.png"
+dest_files=["res://.godot/imported/maincharacterwalk.png-9f996da599ecb48eacb1463a2bc0d832.ctex"]
 
 [params]
 
