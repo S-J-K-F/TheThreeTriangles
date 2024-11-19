@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://4f852vx7mads"]
+
+[ext_resource type="Texture2D" path="res://Assets/Sprites/Inside_B.png" id="1_5a1me"]
+[ext_resource type="Script" path="res://Scrapped_content/box.gd" id="1_a4osm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mpsn1"]
+size = Vector2(18.5, 18)
+
+[node name="Box" type="CharacterBody2D"]
+script = ExtResource("1_a4osm")
+
+[node name="InsideB" type="Sprite2D" parent="."]
+position = Vector2(0.500001, -3.70873e-07)
+scale = Vector2(0.538462, 0.444444)
+texture = ExtResource("1_5a1me")
+region_enabled = true
+region_rect = Rect2(582, 482, 39, 45)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.25, 0)
+shape = SubResource("RectangleShape2D_mpsn1")
