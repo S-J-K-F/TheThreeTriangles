@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://n03bj42g4u5o"]
 
 [ext_resource type="Texture2D" uid="uid://b5vsk2yiet56q" path="res://Tiles/Dream.png" id="1_v6e8i"]
-[ext_resource type="Texture2D" path="res://Tiles/Set_C_Interiors.png" id="2_wdssn"]
+[ext_resource type="Texture2D" uid="uid://buantw3a71m5e" path="res://Tiles/Set_C_Interiors.png" id="2_wdssn"]
 [ext_resource type="Texture2D" uid="uid://ctvsti8lfobw4" path="res://Tiles/Set_D_Interiors.png" id="3_vq27p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uit0k"]
