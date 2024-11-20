@@ -16,7 +16,9 @@
 
 # jfeatherston09:
 - Made sprites for the three triangles and the main character(head frame and walk cycles)
-- Made The Layouts For The Nightmare Rooms
+- Made The Layouts For The Nightmare Rooms and the Boss Room
+- big door
+  
 
 
 
