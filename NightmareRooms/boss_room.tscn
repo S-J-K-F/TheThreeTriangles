@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bq3mugscufjmh"]
+[gd_scene load_steps=6 format=3 uid="uid://bq3mugscufjmh"]
 
 [ext_resource type="Texture2D" uid="uid://6qiauqvtk6us" path="res://Tiles/Nightmare.png" id="1_s7deh"]
 [ext_resource type="Texture2D" uid="uid://ojlq83cwcx7i" path="res://Sprites/bigdoorclosed.png" id="2_5du7i"]
+[ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_ie64m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4iwmo"]
 texture = ExtResource("1_s7deh")
@@ -94,3 +95,6 @@ layer_3/name = "Layer3"
 position = Vector2(253, -266.188)
 scale = Vector2(2.40708, 2.15048)
 texture = ExtResource("2_5du7i")
+
+[node name="Player" parent="." instance=ExtResource("3_ie64m")]
+position = Vector2(241, 100)
