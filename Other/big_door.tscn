@@ -1,23 +1,23 @@
-[gd_scene load_steps=5 format=3 uid="uid://cf7kgkfpsstuy"]
+[gd_scene load_steps=5 format=3 uid="uid://bfx8dbm0p47y7"]
 
 [ext_resource type="Texture2D" uid="uid://bc8qf3jsabbfo" path="res://bigdoormonochromatic.png" id="1_y2aqq"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_s0l7x"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_8fbg0"]
 atlas = ExtResource("1_y2aqq")
 region = Rect2(0, 0, 117, 183)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_d8fmv"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_1bkr1"]
 atlas = ExtResource("1_y2aqq")
 region = Rect2(117, 0, 117, 183)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_oyvd7"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_rctjc"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_s0l7x")
+"texture": SubResource("AtlasTexture_8fbg0")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_d8fmv")
+"texture": SubResource("AtlasTexture_1bkr1")
 }],
 "loop": true,
 "name": &"default",
@@ -27,4 +27,4 @@ animations = [{
 [node name="BigDoor" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_oyvd7")
+sprite_frames = SubResource("SpriteFrames_rctjc")
