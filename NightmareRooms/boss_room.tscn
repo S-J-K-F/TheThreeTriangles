@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://6qiauqvtk6us" path="res://Tiles/Nightmare.png" id="1_s7deh"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_ie64m"]
-[ext_resource type="PackedScene" uid="uid://6rissc1omlek" path="res://Other/big_door.tscn" id="3_qiq8t"]
+[ext_resource type="PackedScene" uid="uid://bfx8dbm0p47y7" path="res://Other/big_door.tscn" id="3_qiq8t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4iwmo"]
 texture = ExtResource("1_s7deh")
@@ -95,4 +95,4 @@ layer_3/name = "Layer3"
 position = Vector2(241, 100)
 
 [node name="BigDoor" parent="." instance=ExtResource("3_qiq8t")]
-position = Vector2(247, -190)
+position = Vector2(246, -189)
