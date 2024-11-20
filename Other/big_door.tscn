@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 [gd_scene load_steps=5 format=3 uid="uid://6rissc1omlek"]
 
 [ext_resource type="Texture2D" path="res://bigdoormonochromatic.png" id="1_y2aqq"]
+=======
+[gd_scene load_steps=5 format=3 uid="uid://cf7kgkfpsstuy"]
+
+[ext_resource type="Texture2D" uid="uid://bc8qf3jsabbfo" path="res://bigdoormonochromatic.png" id="1_y2aqq"]
+>>>>>>> 3a1b474f891a40ba6cc1ffa480347f053a473bfa
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s0l7x"]
 atlas = ExtResource("1_y2aqq")
