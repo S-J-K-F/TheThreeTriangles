@@ -7,6 +7,7 @@
 - Completed most of the safe rooms. Fixed tile sets for medium rooms.
 - The End room layout completed.
 - Collision added to safe rooms.
+- Fixed dream rooms
 
 
 
