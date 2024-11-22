@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://drssairar1r4s"]
+
+[ext_resource type="Texture2D" uid="uid://dpgbjbjah2p2f" path="res://Assets/dialogue_box.png" id="1_pdii3"]
+
+[node name="Dialogue" type="CanvasLayer"]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+offset_left = 64.0
+offset_top = 135.0
+offset_right = 520.0
+offset_bottom = 197.0
+size_flags_horizontal = 0
+texture = ExtResource("1_pdii3")
+
+[node name="Name" type="RichTextLabel" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 378.0
+offset_top = 32.0
+offset_right = 429.0
+offset_bottom = 58.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Name"
+
+[node name="Chat" type="RichTextLabel" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 10.0
+offset_right = 375.0
+offset_bottom = 56.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Chatting..."
