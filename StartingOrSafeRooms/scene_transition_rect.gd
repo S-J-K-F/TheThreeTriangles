@@ -13,8 +13,8 @@ func _ready():
 func _on_animation_finished(anim_name):
 	if anim_name == "Fade":
 		on_transition_finished.emit()
-		animation_player.play("fade_to_normal")
-	elif anim_name == "fade_to_normal":
+		animation_player.play("Fade")
+	elif anim_name == "Fade":
 		color_rect.visible = false
 
 func transition():
