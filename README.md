@@ -9,6 +9,8 @@
 - Collision added to safe rooms.
 - Fixed dream rooms
 - Started to remake the starting room due to bug.
+- Fixed room bugs.
+- Started dialogues.
 
 
 
