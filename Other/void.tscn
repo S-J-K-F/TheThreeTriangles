@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ko1nqepoq3au"]
+
+[ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Entities/images.jpg" id="1_p8gl6"]
+
+[node name="Void" type="Node2D"]
+
+[node name="Images" type="Sprite2D" parent="."]
+y_sort_enabled = true
+position = Vector2(113, 111)
+texture = ExtResource("1_p8gl6")
