@@ -8,6 +8,7 @@
 - The End room layout completed.
 - Collision added to safe rooms.
 - Fixed dream rooms
+- Started to remake the starting room due to bug.
 
 
 
