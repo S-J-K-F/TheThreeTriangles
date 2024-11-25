@@ -9,6 +9,8 @@
 - Collision added to safe rooms.
 - Fixed dream rooms
 - Started to remake the starting room due to bug.
+- Fixed room bugs.
+- Started dialogues.
 
 
 
@@ -20,7 +22,7 @@
 - Made sprites for the three triangles and the main character(head frame and walk cycles)
 - Made The Layouts For The Nightmare Rooms and the Boss Room
 - big door
-  
+- Worked on scene transitions and puzlles. Yes literally all of them. Sebastian is incredibvly lazy
 
 
 

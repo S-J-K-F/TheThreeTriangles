@@ -193,19 +193,23 @@ height = 99.9966
 [node name="Player" type="Node2D"]
 
 [node name="Player" type="CharacterBody2D" parent="."]
+y_sort_enabled = true
 motion_mode = 1
 script = ExtResource("1_iwvtn")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
+y_sort_enabled = true
 zoom = Vector2(2, 2)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+y_sort_enabled = true
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_f50bx")
 animation = &"IdleDown"
+offset = Vector2(0, -15)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2(-1, 16)
+y_sort_enabled = true
 rotation = -1.57905
 scale = Vector2(0.2, 0.2)
 shape = SubResource("CapsuleShape2D_4t8sd")
