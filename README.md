@@ -65,15 +65,15 @@
 # Description:
 
 # Instructions (How to test each of the chosen features and where to find the related scenes and scripts for each feature):
-- Movement and Collisions:
+- Movement and Collisions: Walk around, hold shift, and run into walls
 
-- Enemies and Traps:
+- Enemies and Traps: Continue through the game and find the enemies/traps along the way
 
-- Tilemaps and Worldbuilding:
+- Tilemaps and Worldbuilding: Each scene with the word "room" in it should have tilemap. Notice the worldbuilding is inside a person's dream.
 
-- Dialogue:
+- Dialogue: Talk to every NPC in the safe rooms, starting room, and final room to get the good ending. Do the opposite to get the bad ending.
 
-- GUI (Health, action bar, pause menu, inventory, and dialogue selection):
+- GUI (Health, action bar, pause menu, inventory, and dialogue selection): Look at the top left to see three hearts. The bottom corners should have the action bars. A silloute of a triangle acts as your inventory for how many triangles you have collected. Dialogue should be able to be selected and can go through. Presing ESC should pause the game.
 
 # Instructions (Where to find examples of each OOP concept and Godot feature)
 - Inheritance:
