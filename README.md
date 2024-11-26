@@ -62,7 +62,8 @@
 
 
 
-# Description:
+# Description: 
+- The Three Triangles is a hybrid between a puzzle game and an RPG. You play as a child who has to journey through the whimsy of his dreams, the horror of his nightmares, and the curious in-between to collect three triangle-shaped objects. Conquer enemies and a multitude of puzzles alike, and enjoy the luxiorious artsytle curated by both the internet and yours truly. Boggle your mind in the dozen or so rooms this game has to offer; don't get to comfortable though, you never know what might be lurking in the darkness, or behind that looming door awaiting you at the end... Move up, down, right, or left, using the respective arrow keys. 
 
 # Instructions (How to test each of the chosen features and where to find the related scenes and scripts for each feature):
 - Movement and Collisions: Walk around, hold shift, and run into walls
