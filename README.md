@@ -4,7 +4,7 @@
 - SCENE FOR PLAYER
 - NPCS + AFFECT ON ENDING
 - SAFE/FINAL ROOM CREATION
-## DAILY LOG:
+### DAILY LOG:
 - Created all the scenes needed for now
 - Added most of the sprites needed for now
 - Fixed the tilmaps not being in the correct places and not fully implemented
