@@ -1,10 +1,10 @@
 (Description, instructions and gameplay features chosen at the bottom)
-## S-J-K-F/Wolfie-K:
-# BIG PICTURE ITEMS CONTRIBUTED: 
+# S-J-K-F/Wolfie-K:
+## BIG PICTURE ITEMS CONTRIBUTED: 
 - SCENE FOR PLAYER
 - NPCS + AFFECT ON ENDING
 - SAFE/FINAL ROOM CREATION
-# DAILY LOG:
+## DAILY LOG:
 - Created all the scenes needed for now
 - Added most of the sprites needed for now
 - Fixed the tilmaps not being in the correct places and not fully implemented
@@ -18,44 +18,44 @@
 - Started dialogues.
 
 # jfeatherston09:
-# BIG PICTURE ITEMS CONTRIBUTED: 
+## BIG PICTURE ITEMS CONTRIBUTED: 
 - PUZZLES AND ROOM TRANSITIONS
 - SPRITE CREATION
 - NIGHtMARE + BOSS ROOM CREATION
-# DAILY LOG:
+## DAILY LOG:
 - Made sprites for the three triangles and the main character(head frame and walk cycles)
 - Made The Layouts For The Nightmare Rooms and the Boss Room
 - big door
 - Worked on scene transitions and puzlles.
 
 # jennaL808:
-# BIG PICTURE ITEMS CONTRIBUTED: 
+## BIG PICTURE ITEMS CONTRIBUTED: 
 - TILE MAP LAYER CREATION
 - COLLISION TO TILE MAP
 - DREAM ROOM CREATION
 
-# DAILY LOG:
+## DAILY LOG:
 
 
 
 
 # angelaD707:
-# BIG PICTURE ITEMS CONTRIBUTED:
+## BIG PICTURE ITEMS CONTRIBUTED:
 - ENEMY CREATION
 - TITLE SCREEN CREATION
 
-# DAILY LOG:
+## DAILY LOG:
 
 
 
 
 # shauryaO9:
-# BIG PICTURE ITEMS CONTRIBUTED:
+## BIG PICTURE ITEMS CONTRIBUTED:
 - BOSS CREATION
 - NORMAL ROOM CREATION
 - ENDING SCREEN CREATION
 
-# DAILY LOG:
+## DAILY LOG:
 
 
 
