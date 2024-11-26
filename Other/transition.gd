@@ -1,10 +1,19 @@
-extends Node2D
+extends CanvasLayer
 
-@onready var transition = $Transition
-var starting_room = preload("res://StartingOrSafeRooms/starting_room.tscn")
+@onready var color_rect = $ColorRect
+@onready var animation_player = $AnimationPlayer
 
-func on_play_pressed():
-	transition.play("fade_out")
+func _ready():
+	color_rect.visible = false
 
-func _on_transition_animation_finished(anim_name):
-	get_tree().change_scene_to_packed(starting_room)
+func load_scene(target_scene: String):
+	animation_player.play("Fade")
+	await animation_player.animation_finished
+	get_tree().change_scene_to_file(target_scene)
+	animation_player.play_backwards("Fade")
+
+func reload_scene():
+	pass
+	await animation_player.animation_finished
+	get_tree().reload_current_scene()
+	animation_player.play_backwards("Fade")
