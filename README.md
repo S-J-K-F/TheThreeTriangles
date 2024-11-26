@@ -1,5 +1,5 @@
 (Description, instructions and gameplay features chosen at the bottom)
-# S-J-K-F/Wolfie-K:
+## S-J-K-F/Wolfie-K:
 # BIG PICTURE ITEMS CONTRIBUTED: 
 - SCENE FOR PLAYER
 - NPCS + AFFECT ON ENDING
