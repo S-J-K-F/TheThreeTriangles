@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://dvm53r6qhdx4m"]
+[gd_scene load_steps=7 format=3 uid="uid://dvm53r6qhdx4m"]
 
+[ext_resource type="Script" path="res://StartingOrSafeRooms/safe_room.gd" id="1_8bknv"]
 [ext_resource type="Texture2D" uid="uid://5qi54kmoqqp4" path="res://Tiles/Safe.png" id="1_eseny"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Entities/images.jpg" id="2_bdnfg"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_bbfdk"]
@@ -250,6 +251,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_tt58m")
 
 [node name="Safe Room" type="Node2D"]
+script = ExtResource("1_8bknv")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_1pdj1")
