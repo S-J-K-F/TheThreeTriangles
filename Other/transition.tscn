@@ -1,4 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://bltrw157j0nfn"]
+[gd_scene load_steps=6 format=3 uid="uid://bltrw157j0nfn"]
+
+[sub_resource type="GDScript" id="GDScript_wpwiv"]
+script/source = "extends CanvasLayer
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
 
 [sub_resource type="Animation" id="Animation_we3ge"]
 length = 0.001
@@ -14,20 +28,17 @@ tracks/0/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 1)]
 }
-
-[sub_resource type="Animation" id="Animation_j5cd5"]
-resource_name = "fade"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.966667),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="Animation" id="Animation_0kge4"]
@@ -45,22 +56,50 @@ tracks/0/keys = {
 "values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
+[sub_resource type="Animation" id="Animation_j5cd5"]
+resource_name = "fade"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.966667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ejw71"]
 _data = {
+"Fade": SubResource("Animation_j5cd5"),
 "RESET": SubResource("Animation_we3ge"),
-"fade_in": SubResource("Animation_j5cd5"),
 "fade_on": SubResource("Animation_0kge4")
 }
 
-[node name="transition" type="Node2D"]
+[node name="SceneTransition" type="CanvasLayer"]
+script = SubResource("GDScript_wpwiv")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-root_node = NodePath("SceneTransitionRect")
+root_node = NodePath("../SceneTransitionRect")
 libraries = {
 "": SubResource("AnimationLibrary_ejw71")
 }
 
-[node name="SceneTransitionRect" type="ColorRect" parent="AnimationPlayer"]
+[node name="SceneTransitionRect" type="ColorRect" parent="."]
 offset_left = -42.0
 offset_top = -108.0
 offset_right = 515.0
