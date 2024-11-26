@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://nlag66uclb57"]
 
 [ext_resource type="Texture2D" uid="uid://5qi54kmoqqp4" path="res://Tiles/Safe.png" id="1_ylyem"]
-[ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Entities/images.jpg" id="2_5bma7"]
+[ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="2_5bma7"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_idrlp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7ifaa"]
