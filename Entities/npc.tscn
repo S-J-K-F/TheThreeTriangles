@@ -42,3 +42,7 @@ shape = SubResource("CircleShape2D_1t0eq")
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
+
+[connection signal="area_exited" from="chat_detection_area" to="." method="_on_chat_detection_area_area_exited"]
+[connection signal="body_entered" from="chat_detection_area" to="." method="_on_chat_detection_area_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
