@@ -12,6 +12,7 @@
 - Completed most of the safe rooms. Fixed tile sets for medium rooms.
 - The End room layout completed.
 - Collision added to safe rooms.
+- Creation of NPC is dioloauge half way done
 
 # jfeatherston09:
 ### BIG PICTURE ITEMS:
