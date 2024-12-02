@@ -15,11 +15,13 @@
 - Creation of NPC is dioloauge half way done
 
 # jfeatherston09:
-### BIG PICTURE ITEMS:
+### BIG PICTURE ITEMS: 
+Created the sprites for the three triangles, drew the assets for the player character, created the layouts for the nightmare rooms and the boss room, added transitions between rooms, and wrote the description for the game.
+### DAILY LOG:
 - Made sprites for the three triangles and the main character(head frame and walk cycles)
 - Made The Layouts For The Nightmare Rooms and the Boss Room
 - big door
-### DAILY LOG:
+- Room Transitions
 
 # jennaL808:
 ### BIG PICTURE ITEMS:
