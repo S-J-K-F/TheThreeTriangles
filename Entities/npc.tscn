@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://dnuqumhug6mb7"]
+
+[ext_resource type="Script" path="res://Entities/npc.gd" id="1_miqep"]
+[ext_resource type="Texture2D" uid="uid://djpje10lphxwa" path="res://Assets/Sprites/NPCS.png" id="1_xykml"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dt0gd"]
+atlas = ExtResource("1_xykml")
+region = Rect2(192, 192, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t4flm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dt0gd")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4ors7"]
+radius = 14.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1t0eq"]
+radius = 32.7567
+
+[node name="npc" type="CharacterBody2D"]
+script = ExtResource("1_miqep")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_t4flm")
+animation = &"Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 11)
+shape = SubResource("CircleShape2D_4ors7")
+
+[node name="chat_detection_area" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chat_detection_area"]
+shape = SubResource("CircleShape2D_1t0eq")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
