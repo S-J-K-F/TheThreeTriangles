@@ -1,6 +1,9 @@
 (Description, instructions and gameplay features chosen at the bottom)
 # S-J-K-F/Wolfie-K:
 ### BIG PICTURE ITEMS:
+- Created safe rooms
+- Added diolouge + NPC
+- Created Player
 ### DAILY LOG:
 - Created all the scenes needed for now
 - Added most of the sprites needed for now
