@@ -4,6 +4,7 @@
 - Created safe rooms
 - Added diolouge + NPC
 - Created Player
+- Added room music
 ### DAILY LOG:
 - Created all the scenes needed for now
 - Added most of the sprites needed for now
@@ -16,6 +17,9 @@
 
 # jfeatherston09:
 ### BIG PICTURE ITEMS: 
+- Created puzzles
+- Sprite creation
+- Created nightmare rooms and boss room
 Created the sprites for the three triangles, drew the assets for the player character, created the layouts for the nightmare rooms and the boss room, added transitions between rooms, and wrote the description for the game.
 ### DAILY LOG:
 - Made sprites for the three triangles and the main character(head frame and walk cycles)
@@ -25,13 +29,22 @@ Created the sprites for the three triangles, drew the assets for the player char
 
 # jennaL808:
 ### BIG PICTURE ITEMS:
+- Made a GUI system for health points + collected and uncollected triangles + the system for each
+- Created TileMapLayers
+- Added Collision to TileMaps
+- Created Dream Rooms
 ### DAILY LOG:
 
 # angelaD707:
 ### BIG PICTURE ITEMS:
+- Created Enemies + Traps
+-  Created Title Screen
 ### DAILY LOG:
 # shauryaO9:
 ### BIG PICTURE ITEMS:
+- Created the boss
+- Made an ending screen
+- Created normal rooms
 ### DAILY LOG:
 # Description:
 
