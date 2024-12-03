@@ -14,6 +14,7 @@
 - The End room layout completed.
 - Collision added to safe rooms.
 - Creation of NPC is dioloauge half way done
+- NPC almost done
 
 # jfeatherston09:
 ### BIG PICTURE ITEMS: 
