@@ -498,4 +498,4 @@ layer_2/name = "Layer2"
 layer_3/name = "Layer3"
 
 [node name="enemy" parent="." instance=ExtResource("3_88oj6")]
-position = Vector2(635, 66)
+position = Vector2(334, 52)
