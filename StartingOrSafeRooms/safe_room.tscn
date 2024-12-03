@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://5qi54kmoqqp4" path="res://Tiles/Safe.png" id="1_eseny"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="2_bdnfg"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_5tfc1"]
-[ext_resource type="Script" path="res://StartingOrSafeRooms/area_2d.gd" id="4_f2qq3"]
+[ext_resource type="Script" path="res://StartingOrSafeRooms/sr1.gd" id="4_sryss"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tt58m"]
 texture = ExtResource("1_eseny")
@@ -250,8 +250,8 @@ texture = ExtResource("1_eseny")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_tt58m")
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_w1il8"]
-radius = 5.46811
+[sub_resource type="CircleShape2D" id="CircleShape2D_vs0bn"]
+radius = 18.0278
 
 [node name="Safe Room" type="Node2D"]
 
@@ -299,16 +299,14 @@ scale = Vector2(3.55821, 2.44889)
 texture = ExtResource("2_bdnfg")
 
 [node name="Player" parent="." instance=ExtResource("3_5tfc1")]
-position = Vector2(261, 23)
+position = Vector2(79, 86)
 
-[node name="sr1door" type="Area2D" parent="."]
-position = Vector2(740.748, -294.25)
-scale = Vector2(5.32666, 1.96222)
-script = ExtResource("4_f2qq3")
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("4_sryss")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="sr1door"]
-position = Vector2(-11.78, 141.294)
-shape = SubResource("CircleShape2D_w1il8")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(352, -43)
+shape = SubResource("CircleShape2D_vs0bn")
 
-[connection signal="body_entered" from="sr1door" to="sr1door" method="_on_body_entered"]
-[connection signal="body_exited" from="sr1door" to="sr1door" method="_on_body_exited"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
