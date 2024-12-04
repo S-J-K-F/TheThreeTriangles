@@ -15,6 +15,7 @@
 - Collision added to safe rooms.
 - Creation of NPC is dioloauge half way done
 - NPC almost done
+- Dialogue ability finished
 
 # jfeatherston09:
 ### BIG PICTURE ITEMS: 
