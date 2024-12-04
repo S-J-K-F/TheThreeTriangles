@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://c4d652egeh85f"]
+[gd_scene load_steps=7 format=3 uid="uid://c4d652egeh85f"]
 
 [ext_resource type="Texture2D" uid="uid://5qi54kmoqqp4" path="res://Tiles/Safe.png" id="1_sgiut"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="2_2t0uq"]
+[ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_oo6jm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6l0q1"]
 texture = ExtResource("1_sgiut")
@@ -219,6 +220,9 @@ texture = ExtResource("1_sgiut")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_6l0q1")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_k0tak"]
+radius = 17.0
+
 [node name="Safe Room 3" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -262,3 +266,12 @@ texture = ExtResource("2_2t0uq")
 position = Vector2(-432.701, 132.5)
 scale = Vector2(3.55821, 2.44889)
 texture = ExtResource("2_2t0uq")
+
+[node name="Player" parent="." instance=ExtResource("3_oo6jm")]
+position = Vector2(332, 104)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(224, -10)
+shape = SubResource("CircleShape2D_k0tak")
