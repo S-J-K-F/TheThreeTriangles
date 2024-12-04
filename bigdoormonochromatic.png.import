@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1ivtxgke6bxd"
-path="res://.godot/imported/maincharacterwalk.png-63b666cfd59f75e53de295fad4363e09.ctex"
+uid="uid://comh8lx3xk84a"
+path="res://.godot/imported/bigdoormonochromatic.png-fd2b405a23595490923b00cdf187cb3a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Other/maincharacterwalk.png"
-dest_files=["res://.godot/imported/maincharacterwalk.png-63b666cfd59f75e53de295fad4363e09.ctex"]
+source_file="res://bigdoormonochromatic.png"
+dest_files=["res://.godot/imported/bigdoormonochromatic.png-fd2b405a23595490923b00cdf187cb3a.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djpje10lphxwa"
-path="res://.godot/imported/NPCS.png-f61b893d785f5d0898706b9e48a9fc81.ctex"
+uid="uid://n3w1dqwnu3uo"
+path="res://.godot/imported/bigDoor.png-590497be5ba9fa086601649789d1ed3f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/NPCS.png"
-dest_files=["res://.godot/imported/NPCS.png-f61b893d785f5d0898706b9e48a9fc81.ctex"]
+source_file="res://bigDoor.png"
+dest_files=["res://.godot/imported/bigDoor.png-590497be5ba9fa086601649789d1ed3f.ctex"]
 
 [params]
 

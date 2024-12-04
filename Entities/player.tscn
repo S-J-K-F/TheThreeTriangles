@@ -1,7 +1,7 @@
 [gd_scene load_steps=25 format=3 uid="uid://degxksk82p8yw"]
 
 [ext_resource type="Script" path="res://Entities/player.gd" id="1_iwvtn"]
-[ext_resource type="Texture2D" uid="uid://1ivtxgke6bxd" path="res://Other/maincharacterwalk.png" id="2_qxlkc"]
+[ext_resource type="Texture2D" uid="uid://1ivtxgke6bxd" path="res://Entities/maincharacterwalk.png" id="2_qxlkc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u5sck"]
 atlas = ExtResource("2_qxlkc")
@@ -193,23 +193,20 @@ height = 99.9966
 [node name="Player" type="Node2D"]
 
 [node name="Player" type="CharacterBody2D" parent="."]
-y_sort_enabled = true
+collision_layer = 3
 motion_mode = 1
 script = ExtResource("1_iwvtn")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-y_sort_enabled = true
 zoom = Vector2(2, 2)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
-y_sort_enabled = true
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_f50bx")
 animation = &"IdleDown"
-offset = Vector2(0, -15)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-y_sort_enabled = true
+position = Vector2(-1, 16)
 rotation = -1.57905
 scale = Vector2(0.2, 0.2)
 shape = SubResource("CapsuleShape2D_4t8sd")

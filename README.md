@@ -1,9 +1,10 @@
 (Description, instructions and gameplay features chosen at the bottom)
 # S-J-K-F/Wolfie-K:
-### BIG PICTURE ITEMS CONTRIBUTED: 
-- SCENE FOR PLAYER
-- NPCS + AFFECT ON ENDING
-- SAFE/FINAL ROOM CREATION
+### BIG PICTURE ITEMS:
+- Created safe rooms
+- Added diolouge + NPC
+- Created Player
+- Added room music
 ### DAILY LOG:
 - Created all the scenes needed for now
 - Added most of the sprites needed for now
@@ -12,70 +13,53 @@
 - Completed most of the safe rooms. Fixed tile sets for medium rooms.
 - The End room layout completed.
 - Collision added to safe rooms.
-- Fixed dream rooms
-- Started to remake the starting room due to bug.
-- Fixed room bugs.
-- Started dialogues.
+- Creation of NPC is dioloauge half way done
+- NPC almost done
 
 # jfeatherston09:
-### BIG PICTURE ITEMS CONTRIBUTED: 
-- PUZZLES AND ROOM TRANSITIONS
-- SPRITE CREATION
-- NIGHTMARE + BOSS ROOM CREATION
+### BIG PICTURE ITEMS: 
+- Created puzzles
+- Sprite creation
+- Created nightmare rooms and boss room
+Created the sprites for the three triangles, drew the assets for the player character, created the layouts for the nightmare rooms and the boss room, added transitions between rooms, and wrote the description for the game.
 ### DAILY LOG:
 - Made sprites for the three triangles and the main character(head frame and walk cycles)
 - Made The Layouts For The Nightmare Rooms and the Boss Room
 - big door
-- Worked on scene transitions and puzzles.
-- Wrote the game description
+- Room Transitions
 
 # jennaL808:
-### BIG PICTURE ITEMS CONTRIBUTED: 
-- TILE MAP LAYER CREATION
-- COLLISION TO TILE MAP
-- DREAM ROOM CREATION
-
+### BIG PICTURE ITEMS:
+- Made a GUI system for health points + collected and uncollected triangles + the system for each
+- Created TileMapLayers
+- Added Collision to TileMaps
+- Created Dream Rooms
 ### DAILY LOG:
-
-
-
 
 # angelaD707:
-### BIG PICTURE ITEMS CONTRIBUTED:
-- ENEMY CREATION + TRAPS
-- TITLE SCREEN CREATION
-
+### BIG PICTURE ITEMS:
+- Created Enemies + Traps
+-  Created Title Screen
 ### DAILY LOG:
-
-
-
-
 # shauryaO9:
-### BIG PICTURE ITEMS CONTRIBUTED:
-- BOSS CREATION
-- NORMAL ROOM CREATION
-- ENDING SCREEN CREATION
-
+### BIG PICTURE ITEMS:
+- Created the boss
+- Made an ending screen
+- Created normal rooms
 ### DAILY LOG:
-
-
-
-
-
-
 # Description: 
-- The Three Triangles is a hybrid between a puzzle game and an RPG. You play as a child who has to journey through the whimsy of his dreams, the horror of his nightmares, and the curious in-between to collect three triangle-shaped objects. Conquer enemies and a multitude of puzzles alike, and enjoy the luxiorious artsytle curated by both the internet and yours truly. Boggle your mind in the dozen or so rooms this game has to offer; don't get to comfortable though, you never know what might be lurking in the darkness, or behind that looming door awaiting you at the end... Move up, down, right, or left, using the respective arrow keys. 
+The Three Triangles is a hybrid between a puzzle game and an RPG. You play as a child who has to journey through the whimsy of his dreams, the horror of his nightmares, and the curious in-between to collect three triangle-shaped objects. Conquer enemies and a multitude of puzzles alike, and enjoy the luxiorious artsytle curated by both the internet and yours truly. Boggle your mind in the dozen or so rooms this game has to offer; don't get to comfortable though, you never know what might be lurking in the darkness, or behind that looming door awaiting you at the end... Move up, down, right, or left, using the respective arrow keys.
 
 # Instructions (How to test each of the chosen features and where to find the related scenes and scripts for each feature):
-- Movement and Collisions: Walk around with arrow keys, hold shift to run, and walk into walls
+- Movement and Collisions: Simply move around using the arrow keys. Up is to move up, down is to move odwn, left is to move left, and right is to move right. Once you start moving in a certain direction, you can't change directions until you stop moving entirely. As for collisions, those can be found on the tilemaps of all of the objects in each scene. You collide with walls and other objects in the map.
 
-- Enemies and Traps: Continue through the game and find the enemies/traps along the way
+- Enemies and Traps: Traps are thrown in here and there in each map. Enemies have their own folder, "Entities", and they first start appearing in the latter dreasmmare rooms. From that point onward, the enemies become more prevelant and are scattered throughout the nightmare rooms.
 
-- Tilemaps and Worldbuilding: Each scene with the word "room" in it should have tilemap. Notice the worldbuilding is inside a person's dream.
+- Tilemaps and Worldbuilding: All tilemaps can be found in each level scene, as well as the "Titles" folder. They are what makes up every single visible object(asterisk). Every tilemap is sourced from the internet. 
 
-- Dialogue: Talk to every NPC in the safe rooms, starting room, and final room to get the good ending. Do the opposite to get the bad ending.
+- Dialogue: 
 
-- GUI (Health, action bar, pause menu, inventory, and dialogue selection): Look at the top left to see three hearts. The bottom corners should have the action bars. A silloute of a triangle acts as your inventory for how many triangles you have collected. Dialogue should be able to be selected and can go through. Presing ESC should pause the game.
+- GUI (Health, action bar, pause menu, inventory, and dialogue selection): Our health system follows a simple 3 life system, and are displayed via a GUI displaying three hearts. We also have a GUI displaying the three triangles needed to be collected, which is used to depict which of them have yet to be collected and which ones you currently have.
 
 # Instructions (Where to find examples of each OOP concept and Godot feature)
 - Inheritance:

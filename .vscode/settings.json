@@ -10,6 +10,5 @@
 	"files.trimTrailingWhitespace": true,
 	"workbench.commandPalette.preserveInput": true,
 	"scm.compactFolders": false,
-	"merge-conflict.autoNavigateNextConflict.enabled": true,
-	"godotTools.editorPath.godot4": "c:\\Users\\SKey\\Desktop\\Godot_v4.3-stable_win64.exe"
+	"merge-conflict.autoNavigateNextConflict.enabled": true
 }
