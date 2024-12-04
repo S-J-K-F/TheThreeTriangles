@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://jligjfhi4l5i"]
+[gd_scene load_steps=8 format=3 uid="uid://jligjfhi4l5i"]
 
 [ext_resource type="Texture2D" uid="uid://5qi54kmoqqp4" path="res://Tiles/Safe.png" id="1_b6ulo"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="2_ue3wt"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_662ta"]
+[ext_resource type="Script" path="res://StartingOrSafeRooms/sr2.gd" id="3_ucumt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c2c3f"]
 texture = ExtResource("1_b6ulo")
@@ -282,6 +283,7 @@ scale = Vector2(3.55821, 2.44889)
 texture = ExtResource("2_ue3wt")
 
 [node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("3_ucumt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(64, -35)
@@ -289,3 +291,6 @@ shape = SubResource("CircleShape2D_1xyc1")
 
 [node name="Player" parent="." instance=ExtResource("3_662ta")]
 position = Vector2(364, 92)
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
