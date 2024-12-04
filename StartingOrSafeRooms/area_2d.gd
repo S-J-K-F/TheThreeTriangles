@@ -1,8 +1,14 @@
 extends Area2D
 
+while true do
 var entered = false
 
+<<<<<<< Updated upstream
 func _on_body_entered(body:PhysicsBody2D) -> void:
+=======
+
+func _on_body_entered(body:Node2D) -> void:
+>>>>>>> Stashed changes
 	entered = true
 
 
