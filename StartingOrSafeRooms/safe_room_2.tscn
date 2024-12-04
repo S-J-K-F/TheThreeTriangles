@@ -284,7 +284,7 @@ texture = ExtResource("2_ue3wt")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(352, -41)
+position = Vector2(64, -35)
 shape = SubResource("CircleShape2D_1xyc1")
 
 [node name="Player" parent="." instance=ExtResource("3_662ta")]
