@@ -1,6 +1,6 @@
 extends Area2D
 
-while true do
+
 var entered = false
 
 
