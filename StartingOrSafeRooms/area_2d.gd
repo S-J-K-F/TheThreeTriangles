@@ -2,13 +2,12 @@ extends Area2D
 
 var entered = false
 
-func _on_body_entered(body:Node2D) -> void:
+func _on_body_entered(body:PhysicsBody2D) -> void:
 	entered = true
 
 
-func _on_body_exited(body:Node2D) -> void:
+func _on_body_exited(body) -> void:
 	entered = false
-
 
 func _process(delta):
 	if entered == true:
