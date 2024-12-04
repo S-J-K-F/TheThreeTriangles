@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://bgyxk6cg4nfam"]
+[gd_scene load_steps=10 format=3 uid="uid://bgyxk6cg4nfam"]
 
 [ext_resource type="Texture2D" uid="uid://b5vsk2yiet56q" path="res://Tiles/Dream.png" id="1_2iste"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_jct8i"]
 [ext_resource type="Texture2D" uid="uid://buantw3a71m5e" path="res://Tiles/Set_C_Interiors.png" id="3_oath4"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="4_a0gvx"]
+[ext_resource type="Script" path="res://DreamRooms/dr1.gd" id="5_3iwoq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f6afa"]
 texture = ExtResource("1_2iste")
@@ -575,6 +576,9 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_f6afa")
 sources/5 = SubResource("TileSetAtlasSource_jaqhr")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_3ohsv"]
+radius = 17.0
+
 [node name="Dream Room" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -609,3 +613,13 @@ texture = ExtResource("4_a0gvx")
 position = Vector2(1895.75, 203.25)
 scale = Vector2(6.61556, 2.04667)
 texture = ExtResource("4_a0gvx")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("5_3iwoq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(463, 383)
+shape = SubResource("CircleShape2D_3ohsv")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
