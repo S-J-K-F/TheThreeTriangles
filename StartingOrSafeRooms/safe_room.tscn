@@ -1,13 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://dvm53r6qhdx4m"]
+[gd_scene load_steps=8 format=3 uid="uid://dvm53r6qhdx4m"]
 
 [ext_resource type="Texture2D" uid="uid://5qi54kmoqqp4" path="res://Tiles/Safe.png" id="1_eseny"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Entities/images.jpg" id="2_bdnfg"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_afh3q"]
-<<<<<<< HEAD
-[ext_resource type="Script" path="res://Entities/player.gd" id="4_sf08t"]
-=======
 [ext_resource type="PackedScene" uid="uid://c6q1l4ekp5viy" path="res://Music/hit_ctrl_happy_pixie_town.tscn" id="4_liuqh"]
->>>>>>> d9228d654811530e51a54c943633ea46f45df1ae
+[ext_resource type="PackedScene" uid="uid://cmvh7rjtd81o0" path="res://Entities/npc_2.tscn" id="5_2mkfs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tt58m"]
 texture = ExtResource("1_eseny")
@@ -301,10 +298,9 @@ texture = ExtResource("2_bdnfg")
 
 [node name="Player" parent="." instance=ExtResource("3_afh3q")]
 position = Vector2(77, 14)
-<<<<<<< HEAD
-script = ExtResource("4_sf08t")
-=======
 
 [node name="HitCtrl-HappyPixieTown" parent="." instance=ExtResource("4_liuqh")]
 position = Vector2(227, 389)
->>>>>>> d9228d654811530e51a54c943633ea46f45df1ae
+
+[node name="npc2" parent="." instance=ExtResource("5_2mkfs")]
+position = Vector2(286, -27)
