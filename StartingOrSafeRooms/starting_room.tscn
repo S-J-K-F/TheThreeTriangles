@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dhuif0lntdgx8"]
+[gd_scene load_steps=8 format=3 uid="uid://bwff8iwej7wn8"]
 
 [ext_resource type="Texture2D" uid="uid://5qi54kmoqqp4" path="res://Tiles/Safe.png" id="1_o0uus"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_53jon"]
