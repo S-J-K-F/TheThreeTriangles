@@ -286,6 +286,7 @@ scale = Vector2(1.09716, 0.777531)
 texture = ExtResource("3_aorc4")
 
 [node name="Area2D" type="Area2D" parent="."]
+position = Vector2(2, 0)
 script = ExtResource("5_c6ky3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
@@ -293,7 +294,7 @@ position = Vector2(416, -33)
 shape = SubResource("CircleShape2D_oka3m")
 
 [node name="Player" parent="." instance=ExtResource("3_53jon")]
-position = Vector2(238, 42)
+position = Vector2(100, 89)
 
-[connection signal="body_entered" from="Area2D" to="Player" method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="Area2D" to="Player" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
