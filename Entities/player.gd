@@ -59,3 +59,11 @@ func play_anim(movement):
 			anim.play("WalkUp")
 		elif movement == 0:
 			anim.play("IdleUp")
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.
+
+
+func _on_area_2d_body_exited(body: Node2D) -> void:
+	pass # Replace with function body.
