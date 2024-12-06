@@ -24,7 +24,7 @@ func _ready():
 func _process(delta):
 	if current_state == 0 or current_state == 1:
 		$AnimatedSprite2D.play("Idle")
-	
+
 
 	if is_roaming:
 		match current_state:
@@ -32,7 +32,7 @@ func _process(delta):
 				pass
 			NEW_DIR:
 				dir = choose([Vector2.RIGHT, Vector2.UP, Vector2.LEFT, Vector2.DOWN])
-			MOVE: 
+			MOVE:
 				move(delta)
 	if Input.is_action_just_pressed("select"):
 		print("chatting with npc")
@@ -67,3 +67,11 @@ func _on_timer_timeout() -> void:
 func _on_dialogue_dialogue_finished() -> void:
 	is_chatting = false
 	is_roaming = true
+
+
+func _on_area_2d_body_entered(body:Node2D) -> void:
+	pass # Replace with function body.
+
+
+func _on_area_2d_body_exited(body:Node2D) -> void:
+	pass # Replace with function body.
