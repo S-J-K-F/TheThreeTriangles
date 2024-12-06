@@ -193,7 +193,11 @@ height = 99.9966
 [node name="Player" type="Node2D"]
 
 [node name="Player" type="CharacterBody2D" parent="."]
+<<<<<<< HEAD
 y_sort_enabled = true
+=======
+collision_layer = 3
+>>>>>>> main
 motion_mode = 1
 script = ExtResource("1_iwvtn")
 
