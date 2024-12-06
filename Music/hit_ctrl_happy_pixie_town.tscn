@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6q1l4ekp5viy"]
+
+[ext_resource type="AudioStream" uid="uid://br7a3b5ko1gjh" path="res://Music/HitCtrl - Happy Pixie Town.mp3" id="1_5yefs"]
+
+[node name="HitCtrl-HappyPixieTown" type="AudioStreamPlayer2D"]
+position = Vector2(72, 350)
+stream = ExtResource("1_5yefs")
+autoplay = true
