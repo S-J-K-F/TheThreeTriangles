@@ -190,18 +190,20 @@ animations = [{
 radius = 35.0401
 height = 99.9966
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="Node2D"]
 script = ExtResource("1_iwvtn")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 zoom = Vector2(2, 2)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_f50bx")
 animation = &"IdleDown"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(-1, 16)
 rotation = -1.57905
 scale = Vector2(0.2, 0.2)
