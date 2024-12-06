@@ -260,7 +260,7 @@ layer_3/tile_data = PackedInt32Array(-327682, 458752, 0, -262146, 458752, 0, -19
 position = Vector2(337, -30)
 
 [node name="Player" parent="." instance=ExtResource("3_53jon")]
-position = Vector2(69, 75)
+position = Vector2(83, 11)
 
 [node name="Darnkess" type="Node2D" parent="."]
 position = Vector2(-384.5, 80.5)
