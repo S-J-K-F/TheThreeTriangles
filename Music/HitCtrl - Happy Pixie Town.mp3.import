@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://br7a3b5ko1gjh"
+path="res://.godot/imported/HitCtrl - Happy Pixie Town.mp3-b994857a113c16b9a2d70bf4617042ba.mp3str"
+
+[deps]
+
+source_file="res://Music/HitCtrl - Happy Pixie Town.mp3"
+dest_files=["res://.godot/imported/HitCtrl - Happy Pixie Town.mp3-b994857a113c16b9a2d70bf4617042ba.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
