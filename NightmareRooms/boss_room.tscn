@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bq3mugscufjmh"]
+[gd_scene load_steps=7 format=3 uid="uid://bq3mugscufjmh"]
 
 [ext_resource type="Texture2D" uid="uid://6qiauqvtk6us" path="res://Tiles/Nightmare.png" id="1_s7deh"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_ie64m"]
 [ext_resource type="PackedScene" uid="uid://bfx8dbm0p47y7" path="res://Other/big_door.tscn" id="3_qiq8t"]
+[ext_resource type="AudioStream" uid="uid://cq1a00en6kgn4" path="res://Music/мистичная тема.mp3" id="4_ag8gu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4iwmo"]
 texture = ExtResource("1_s7deh")
@@ -96,3 +97,7 @@ position = Vector2(245, 241)
 
 [node name="BigDoor" parent="." instance=ExtResource("3_qiq8t")]
 position = Vector2(246, -189)
+
+[node name="МистичнаяТема" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(26, 243)
+stream = ExtResource("4_ag8gu")
