@@ -2,9 +2,9 @@ extends Area2D
 
 var entered = false
 
-func _on_body_entered(body:PhysicsBody2D) -> void:
+func _on_body_entered(body:CharacterBody2D) -> void:
 	entered = true
-
+	print("test")
 
 func _on_body_exited(body) -> void:
 	entered = false
