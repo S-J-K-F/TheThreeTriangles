@@ -1,10 +1,19 @@
+<<<<<<< HEAD
 [gd_scene load_steps=9 format=3 uid="uid://3bh17xr1yfug"]
+=======
+[gd_scene load_steps=8 format=3 uid="uid://3bh17xr1yfug"]
+>>>>>>> main
 
 [ext_resource type="Texture2D" uid="uid://5qi54kmoqqp4" path="res://Tiles/Safe.png" id="1_o0uus"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_53jon"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Entities/images.jpg" id="3_aorc4"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://pmx6bflr3fn2" path="res://Entities/npc.tscn" id="4_l81pb"]
 [ext_resource type="Script" path="res://StartingOrSafeRooms/sr1.gd" id="5_c6ky3"]
+=======
+[ext_resource type="PackedScene" uid="uid://dyq5kk78fbp8g" path="res://Entities/npc.tscn" id="4_l81pb"]
+[ext_resource type="PackedScene" uid="uid://c6q1l4ekp5viy" path="res://Music/hit_ctrl_happy_pixie_town.tscn" id="5_p3j77"]
+>>>>>>> main
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xslmf"]
 texture = ExtResource("1_o0uus")
@@ -263,6 +272,12 @@ layer_3/tile_data = PackedInt32Array(-327682, 458752, 0, -262146, 458752, 0, -19
 [node name="npc" parent="." instance=ExtResource("4_l81pb")]
 position = Vector2(337, -30)
 
+<<<<<<< HEAD
+=======
+[node name="Player" parent="." instance=ExtResource("3_53jon")]
+position = Vector2(83, 11)
+
+>>>>>>> main
 [node name="Darnkess" type="Node2D" parent="."]
 position = Vector2(-384.5, 80.5)
 scale = Vector2(3.13333, 3.99556)
@@ -285,6 +300,7 @@ position = Vector2(226.197, 103.365)
 scale = Vector2(1.09716, 0.777531)
 texture = ExtResource("3_aorc4")
 
+<<<<<<< HEAD
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(2, 0)
 script = ExtResource("5_c6ky3")
@@ -298,3 +314,7 @@ position = Vector2(100, 89)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
+=======
+[node name="HitCtrl-HappyPixieTown" parent="." instance=ExtResource("5_p3j77")]
+position = Vector2(177, 391)
+>>>>>>> main
