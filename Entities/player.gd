@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const speed = 200
+var speed = 100
 var current_dir = "none"
 
 func _physics_process(delta):
@@ -29,11 +29,33 @@ func player_movement(delta):
 		play_anim(1)
 		velocity.x = 0
 		velocity.y = -speed
+	#Running
+	elif Input.is_action_pressed("ui_right") && Input.is_action_pressed("shift"):
+		current_dir = "right"
+		play_anim(1)
+		velocity.x = speed * 2
+		velocity.y = 0
+	elif Input.is_action_pressed("ui_left") && Input.is_action_pressed("shift"):
+		current_dir = "left"
+		play_anim(1)
+		velocity.x = -speed * -2
+		velocity.y = 0
+	elif Input.is_action_pressed("ui_down") && Input.is_action_pressed("shift"):
+		current_dir = "down"
+		play_anim(1)
+		velocity.x = 0
+		velocity.y = speed * 2
+	elif Input.is_action_pressed("ui_up") && Input.is_action_pressed("shift"):
+		current_dir = "up"
+		play_anim(1)
+		velocity.x = 0
+		velocity.y = -speed * -2
 	else:
 		play_anim(0)
 		velocity.x = 0
 		velocity.y = 0
 	move_and_slide()
+
 
 func play_anim(movement):
 	var dir = current_dir
