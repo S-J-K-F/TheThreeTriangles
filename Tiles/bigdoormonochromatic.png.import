@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://comh8lx3xk84a"
-path="res://.godot/imported/bigdoormonochromatic.png-fd2b405a23595490923b00cdf187cb3a.ctex"
+uid="uid://bc8qf3jsabbfo"
+path="res://.godot/imported/bigdoormonochromatic.png-c123083d89b6d5b7e408b06832d49abf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bigdoormonochromatic.png"
-dest_files=["res://.godot/imported/bigdoormonochromatic.png-fd2b405a23595490923b00cdf187cb3a.ctex"]
+source_file="res://Tiles/bigdoormonochromatic.png"
+dest_files=["res://.godot/imported/bigdoormonochromatic.png-c123083d89b6d5b7e408b06832d49abf.ctex"]
 
 [params]
 

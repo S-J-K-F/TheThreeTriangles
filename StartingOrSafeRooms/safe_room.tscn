@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dvm53r6qhdx4m"]
+[gd_scene load_steps=6 format=3 uid="uid://dvm53r6qhdx4m"]
 
 [ext_resource type="Texture2D" uid="uid://5qi54kmoqqp4" path="res://Tiles/Safe.png" id="1_eseny"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Entities/images.jpg" id="2_bdnfg"]
+[ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_afh3q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tt58m"]
 texture = ExtResource("1_eseny")
@@ -292,3 +293,6 @@ texture = ExtResource("2_bdnfg")
 position = Vector2(-432.701, 132.5)
 scale = Vector2(3.55821, 2.44889)
 texture = ExtResource("2_bdnfg")
+
+[node name="Player" parent="." instance=ExtResource("3_afh3q")]
+position = Vector2(77, 14)
