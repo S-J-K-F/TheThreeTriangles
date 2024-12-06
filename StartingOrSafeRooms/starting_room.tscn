@@ -293,7 +293,7 @@ position = Vector2(416, -33)
 shape = SubResource("CircleShape2D_oka3m")
 
 [node name="Player" parent="." instance=ExtResource("3_53jon")]
-position = Vector2(264, 61)
+position = Vector2(595, 50)
 
 [connection signal="body_entered" from="Area2D" to="Player" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Player" method="_on_area_2d_body_exited"]
