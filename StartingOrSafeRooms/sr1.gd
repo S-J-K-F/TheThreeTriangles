@@ -4,11 +4,11 @@ var entered = false
 
 func _on_body_entered(body:PhysicsBody2D) -> void:
 	entered = true
-	print(entered)
+
 
 func _on_body_exited(body) -> void:
 	entered = false
-	print(entered)
+
 
 func _process(delta):
 	if entered == true:
