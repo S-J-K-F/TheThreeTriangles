@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://da6ymxbo0o7j8"]
+[gd_scene load_steps=19 format=3 uid="uid://da6ymxbo0o7j8"]
 
 [ext_resource type="Texture2D" uid="uid://y85g3edpc175" path="res://Sprites/Monster.png" id="1_1gif4"]
 [ext_resource type="Script" path="res://Entities/enemy.gd" id="1_dlcda"]
@@ -122,6 +122,9 @@ radius = 185.068
 radius = 14.0
 height = 46.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_8jpse"]
+radius = 52.0384
+
 [node name="enemy" type="CharacterBody2D"]
 script = ExtResource("1_dlcda")
 
@@ -142,6 +145,12 @@ shape = SubResource("CircleShape2D_avrci")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -23)
 shape = SubResource("CapsuleShape2D_5xo75")
+
+[node name="enemy_hitbox" type="Area2D" parent="."]
+position = Vector2(0, -23)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemy_hitbox"]
+shape = SubResource("CircleShape2D_8jpse")
 
 [connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
 [connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]

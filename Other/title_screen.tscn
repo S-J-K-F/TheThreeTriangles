@@ -1,6 +1,16 @@
 [gd_scene load_steps=2 format=3 uid="uid://ikdl60mxefvf"]
 
-[ext_resource type="Script" path="res://Scripts/title_screen.gd" id="1_l0lsk"]
+[sub_resource type="GDScript" id="GDScript_ydiwf"]
+script/source = "extends Control
+
+
+func _on_start_button_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://Other/main_scene.tscn\")
+
+
+func _on_quit_pressed() -> void:
+	get_tree().quit()
+"
 
 [node name="TitleScreen" type="Control"]
 layout_mode = 3
@@ -9,7 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_l0lsk")
+script = SubResource("GDScript_ydiwf")
 
 [node name="StartButton" type="Button" parent="."]
 layout_mode = 0
@@ -39,5 +49,5 @@ theme_override_font_sizes/font_size = 54
 text = "The Three Triangles"
 
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
