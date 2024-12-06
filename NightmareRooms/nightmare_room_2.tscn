@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://b6si22gsjoum5"]
 
 [ext_resource type="Texture2D" uid="uid://6qiauqvtk6us" path="res://Tiles/Nightmare.png" id="1_58enj"]
-[ext_resource type="AudioStream" uid="uid://cq1a00en6kgn4" path="res://Music/мистичная тема.mp3" id="2_4hbjb"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_n2yis"]
+[ext_resource type="PackedScene" uid="uid://c4xgmpgbklg31" path="res://Music/мистичная_тема.tscn" id="3_nqw06"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m76tn"]
 texture = ExtResource("1_58enj")
@@ -104,9 +104,8 @@ layer_1/tile_data = PackedInt32Array(1310719, 65536, 0, 1245184, 65536, 0, 12451
 layer_2/name = "Layer2"
 layer_3/name = "Layer3"
 
-[node name="МистичнаяТема" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(-6, 309)
-stream = ExtResource("2_4hbjb")
-
 [node name="Player" parent="." instance=ExtResource("3_n2yis")]
 position = Vector2(156, 407)
+
+[node name="МистичнаяТема" parent="." instance=ExtResource("3_nqw06")]
+position = Vector2(360, 363)
