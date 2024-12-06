@@ -191,6 +191,7 @@ radius = 35.0401
 height = 99.9966
 
 [node name="Player" type="Node2D"]
+script = ExtResource("1_iwvtn")
 
 [node name="Player" type="CharacterBody2D" parent="."]
 collision_layer = 3
