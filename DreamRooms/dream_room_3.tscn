@@ -1,10 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://n03bj42g4u5o"]
 
 [ext_resource type="Texture2D" uid="uid://b5vsk2yiet56q" path="res://Tiles/Dream.png" id="1_v6e8i"]
-<<<<<<< HEAD
-=======
+
 [ext_resource type="Texture2D" uid="uid://buantw3a71m5e" path="res://Tiles/Set_C_Interiors.png" id="2_qopjv"]
->>>>>>> ba326d7302e6bd8d1a46b62d11514b03f0beffab
+
 [ext_resource type="Texture2D" uid="uid://ctvsti8lfobw4" path="res://Tiles/Set_D_Interiors.png" id="3_vq27p"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="4_hmriq"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="5_v5cry"]
