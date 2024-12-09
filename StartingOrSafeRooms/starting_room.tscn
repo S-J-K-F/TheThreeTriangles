@@ -1,19 +1,20 @@
-<<<<<<< HEAD
-[gd_scene load_steps=9 format=3 uid="uid://3bh17xr1yfug"]
-=======
+
 [gd_scene load_steps=8 format=3 uid="uid://3bh17xr1yfug"]
->>>>>>> main
+
 
 [ext_resource type="Texture2D" uid="uid://5qi54kmoqqp4" path="res://Tiles/Safe.png" id="1_o0uus"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_53jon"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Entities/images.jpg" id="3_aorc4"]
-<<<<<<< HEAD
+
 [ext_resource type="PackedScene" uid="uid://pmx6bflr3fn2" path="res://Entities/npc.tscn" id="4_l81pb"]
 [ext_resource type="Script" path="res://StartingOrSafeRooms/sr1.gd" id="5_c6ky3"]
-=======
+
 [ext_resource type="PackedScene" uid="uid://dyq5kk78fbp8g" path="res://Entities/npc.tscn" id="4_l81pb"]
+
+[ext_resource type="PackedScene" uid="uid://pmx6bflr3fn2" path="res://Entities/npc.tscn" id="4_l81pb"]
+
 [ext_resource type="PackedScene" uid="uid://c6q1l4ekp5viy" path="res://Music/hit_ctrl_happy_pixie_town.tscn" id="5_p3j77"]
->>>>>>> main
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xslmf"]
 texture = ExtResource("1_o0uus")
