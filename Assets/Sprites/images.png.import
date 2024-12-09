@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bue7q2ellranv"
-path="res://.godot/imported/bigdoormonochromatic.png-fd2b405a23595490923b00cdf187cb3a.ctex"
+uid="uid://b4nm2vvdn113n"
+path="res://.godot/imported/images.png-894941c750af7f443519d0b2359f482f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bigdoormonochromatic.png"
-dest_files=["res://.godot/imported/bigdoormonochromatic.png-fd2b405a23595490923b00cdf187cb3a.ctex"]
+source_file="res://Assets/Sprites/images.png"
+dest_files=["res://.godot/imported/images.png-894941c750af7f443519d0b2359f482f.ctex"]
 
 [params]
 
