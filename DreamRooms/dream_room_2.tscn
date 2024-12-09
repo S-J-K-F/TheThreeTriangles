@@ -1,16 +1,12 @@
-
-[gd_scene load_steps=12 format=3 uid="uid://cfpwbnj1luf0y"]
-
+[gd_scene load_steps=13 format=3 uid="uid://cfpwbnj1luf0y"]
 
 [ext_resource type="Texture2D" uid="uid://b5vsk2yiet56q" path="res://Tiles/Dream.png" id="1_0l8wu"]
 [ext_resource type="Texture2D" uid="uid://buantw3a71m5e" path="res://Tiles/Set_C_Interiors.png" id="2_sxrgw"]
 [ext_resource type="Texture2D" uid="uid://ctvsti8lfobw4" path="res://Tiles/Set_D_Interiors.png" id="3_w8dmq"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="4_6k4v6"]
-[ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="5_6v67o"]
-[ext_resource type="Script" path="res://DreamRooms/dr2.gd" id="6_kulp2"]
 [ext_resource type="PackedScene" uid="uid://c6q1l4ekp5viy" path="res://Music/hit_ctrl_happy_pixie_town.tscn" id="4_7gv14"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="5_yy5xx"]
-
+[ext_resource type="Script" path="res://DreamRooms/dr2.gd" id="6_kulp2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xur34"]
 texture = ExtResource("1_0l8wu")
@@ -808,8 +804,6 @@ layer_2/name = "Layer2"
 layer_2/tile_data = PackedInt32Array(458760, 327682, 8, 458758, 196610, 6)
 layer_3/name = "Layer3"
 
-
-
 [node name="Images" type="Sprite2D" parent="."]
 position = Vector2(-167.25, 213.5)
 scale = Vector2(1.49111, 3.52444)
@@ -837,11 +831,11 @@ script = ExtResource("6_kulp2")
 position = Vector2(528, 390)
 shape = SubResource("CircleShape2D_8bt3p")
 
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
-[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
-
 [node name="HitCtrl-HappyPixieTown" parent="." instance=ExtResource("4_7gv14")]
 position = Vector2(419, 731)
 
 [node name="Player" parent="." instance=ExtResource("5_yy5xx")]
 position = Vector2(249, 39)
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
