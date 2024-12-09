@@ -59,3 +59,9 @@ func play_anim(movement):
 			anim.play("WalkUp")
 		elif movement == 0:
 			anim.play("IdleUp")
+
+
+
+func _on_area_2d_body_entered(body):
+	if body.is_in_group("triangles"):
+		body.Collect()

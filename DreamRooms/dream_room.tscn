@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://bgyxk6cg4nfam"]
+[gd_scene load_steps=10 format=3 uid="uid://bgyxk6cg4nfam"]
 
 [ext_resource type="Texture2D" uid="uid://b5vsk2yiet56q" path="res://Tiles/Dream.png" id="1_2iste"]
-[ext_resource type="PackedScene" uid="uid://da6ymxbo0o7j8" path="res://Entities/enemy.tscn" id="3_88oj6"]
+[ext_resource type="PackedScene" path="res://Entities/enemy.tscn" id="3_88oj6"]
 [ext_resource type="Texture2D" uid="uid://buantw3a71m5e" path="res://Tiles/Set_C_Interiors.png" id="3_oath4"]
 [ext_resource type="PackedScene" uid="uid://c6q1l4ekp5viy" path="res://Music/hit_ctrl_happy_pixie_town.tscn" id="4_11jrc"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="5_neo54"]
+[ext_resource type="PackedScene" uid="uid://d2vbsrmakmkua" path="res://Assets/Sprites/triangles/dreamtriangle.tscn" id="6_ger6u"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f6afa"]
 texture = ExtResource("1_2iste")
@@ -507,3 +508,6 @@ position = Vector2(185, 680)
 
 [node name="Player" parent="." instance=ExtResource("5_neo54")]
 position = Vector2(242, 39)
+
+[node name="Collectable" parent="." instance=ExtResource("6_ger6u")]
+position = Vector2(289, 64)

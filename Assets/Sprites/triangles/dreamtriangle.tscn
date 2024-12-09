@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2vbsrmakmkua"]
+
+[ext_resource type="Script" path="res://Assets/Sprites/triangles/triangles.gd" id="1_445md"]
+[ext_resource type="Texture2D" uid="uid://byhxgp81dvojj" path="res://Assets/Sprites/triangles/dreamTriangle.png" id="1_s6d8j"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xg8e2"]
+radius = 19.105
+
+[node name="Collectable" type="StaticBody2D" groups=["collectible"]]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_445md")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 0)
+shape = SubResource("CircleShape2D_xg8e2")
+
+[node name="DreamTriangle" type="Sprite2D" parent="."]
+position = Vector2(-5, -2)
+scale = Vector2(0.266129, 0.245968)
+texture = ExtResource("1_s6d8j")
