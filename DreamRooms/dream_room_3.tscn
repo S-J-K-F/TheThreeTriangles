@@ -1,12 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://n03bj42g4u5o"]
 
 [ext_resource type="Texture2D" uid="uid://b5vsk2yiet56q" path="res://Tiles/Dream.png" id="1_v6e8i"]
-
-[ext_resource type="Texture2D" uid="uid://buantw3a71m5e" path="res://Tiles/Set_C_Interiors.png" id="2_qopjv"]
-
+[ext_resource type="Texture2D" uid="uid://buantw3a71m5e" path="res://Tiles/Set_C_Interiors.png" id="2_ysiq4"]
 [ext_resource type="Texture2D" uid="uid://ctvsti8lfobw4" path="res://Tiles/Set_D_Interiors.png" id="3_vq27p"]
-[ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="4_hmriq"]
-[ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="5_v5cry"]
+[ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="4_kvdg8"]
+[ext_resource type="PackedScene" uid="uid://c6q1l4ekp5viy" path="res://Music/hit_ctrl_happy_pixie_town.tscn" id="5_vny7c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uit0k"]
 texture = ExtResource("1_v6e8i")
@@ -239,8 +237,8 @@ texture = ExtResource("1_v6e8i")
 3:26/0 = 0
 4:26/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jq7s3"]
-texture = ExtResource("2_qopjv")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oguvw"]
+texture = ExtResource("2_ysiq4")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -855,7 +853,7 @@ texture = ExtResource("3_vq27p")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_uit0k")
 sources/4 = SubResource("TileSetAtlasSource_xgdqv")
-sources/1 = SubResource("TileSetAtlasSource_jq7s3")
+sources/3 = SubResource("TileSetAtlasSource_oguvw")
 
 [node name="Dream Room 3" type="Node2D"]
 
@@ -892,3 +890,6 @@ texture = ExtResource("5_v5cry")
 position = Vector2(1012.25, -610.25)
 scale = Vector2(10.0422, 5.43778)
 texture = ExtResource("5_v5cry")
+
+[node name="HitCtrl-HappyPixieTown" parent="." instance=ExtResource("5_vny7c")]
+position = Vector2(54, 397)

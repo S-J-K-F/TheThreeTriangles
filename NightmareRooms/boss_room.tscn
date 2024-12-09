@@ -1,8 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://bq3mugscufjmh"]
+[gd_scene load_steps=7 format=3 uid="uid://bq3mugscufjmh"]
 
 [ext_resource type="Texture2D" uid="uid://6qiauqvtk6us" path="res://Tiles/Nightmare.png" id="1_s7deh"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_ie64m"]
 [ext_resource type="PackedScene" uid="uid://bfx8dbm0p47y7" path="res://Other/big_door.tscn" id="3_qiq8t"]
+<<<<<<< HEAD
+[ext_resource type="Script" path="res://Entities/player.gd" id="3_virwn"]
+=======
+[ext_resource type="PackedScene" uid="uid://c4xgmpgbklg31" path="res://Music/мистичная_тема.tscn" id="4_31mrt"]
+>>>>>>> d9228d654811530e51a54c943633ea46f45df1ae
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4iwmo"]
 texture = ExtResource("1_s7deh")
@@ -31,6 +36,7 @@ texture = ExtResource("1_s7deh")
 3:2/0 = 0
 4:2/0 = 0
 5:2/0 = 0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:2/0 = 0
 7:2/0 = 0
 0:3/0 = 0
@@ -67,10 +73,15 @@ texture = ExtResource("1_s7deh")
 6:6/0 = 0
 7:6/0 = 0
 0:7/0 = 0
+0:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:7/0 = 0
+1:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:7/0 = 0
+2:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:7/0 = 0
+3:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:7/0 = 0
+4:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:7/0 = 0
 6:7/0 = 0
 7:7/0 = 0
@@ -93,6 +104,10 @@ layer_3/name = "Layer3"
 
 [node name="Player" parent="." instance=ExtResource("3_ie64m")]
 position = Vector2(241, 100)
+script = ExtResource("3_virwn")
 
 [node name="BigDoor" parent="." instance=ExtResource("3_qiq8t")]
 position = Vector2(246, -189)
+
+[node name="МистичнаяТема" parent="." instance=ExtResource("4_31mrt")]
+position = Vector2(394, 428)

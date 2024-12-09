@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://wvep6sig5lxt"]
+[gd_scene load_steps=9 format=3 uid="uid://bgyxk6cg4nfam"]
 
 [ext_resource type="Texture2D" uid="uid://b5vsk2yiet56q" path="res://Tiles/Dream.png" id="1_2iste"]
 [ext_resource type="Texture2D" uid="uid://buantw3a71m5e" path="res://Tiles/Set_C_Interiors.png" id="3_oath4"]
+[ext_resource type="PackedScene" uid="uid://c6q1l4ekp5viy" path="res://Music/hit_ctrl_happy_pixie_town.tscn" id="4_11jrc"]
+[ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="5_neo54"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f6afa"]
 texture = ExtResource("1_2iste")
@@ -584,3 +586,13 @@ layer_1/name = "Layer1"
 layer_1/tile_data = PackedInt32Array(131088, 131077, 4, 131089, 196613, 4, 17, 196613, 2, 16, 131077, 2, 65552, 131077, 3, 65553, 196613, 3, 65562, 655365, 0, 131098, 655365, 1, 65563, 720901, 0, 131099, 720901, 1, 65538, 262144, 24, 720930, 262144, 24, 720898, 262144, 24, 65544, 458752, 24, 65566, 131072, 25, 65560, 786437, 6, 131096, 786437, 7, 65561, 851973, 6, 131097, 851973, 7, 65540, 196608, 23, 65541, 196608, 23, 65542, 327680, 24, 65559, 393216, 24, 65554, 917509, 5, 65551, 983045, 5, 458759, 327680, 23, 393224, 327680, 23, 458760, 458752, 23, 524296, 327680, 23, 393225, 327680, 23, 458761, 458752, 23, 524297, 327680, 23, 393226, 327680, 23, 458762, 458752, 23, 524298, 327680, 23, 458763, 327680, 23, 458776, 327680, 23, 393241, 327680, 23, 458777, 458752, 23, 524313, 327680, 23, 393242, 327680, 23, 458778, 458752, 23, 524314, 327680, 23, 393243, 327680, 23, 458779, 458752, 23, 524315, 327680, 23, 458780, 327680, 23, 786446, 262144, 22)
 layer_2/name = "Layer2"
 layer_3/name = "Layer3"
+
+
+[node name="enemy" parent="." instance=ExtResource("3_88oj6")]
+position = Vector2(635, 66)
+
+[node name="HitCtrl-HappyPixieTown" parent="." instance=ExtResource("4_11jrc")]
+position = Vector2(185, 680)
+
+[node name="Player" parent="." instance=ExtResource("5_neo54")]
+position = Vector2(242, 39)

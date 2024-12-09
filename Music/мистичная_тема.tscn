@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4xgmpgbklg31"]
+
+[ext_resource type="AudioStream" uid="uid://cq1a00en6kgn4" path="res://Music/мистичная тема.mp3" id="1_uoxl6"]
+
+[node name="МистичнаяТема" type="AudioStreamPlayer2D"]
+position = Vector2(319, 200)
+stream = ExtResource("1_uoxl6")
+autoplay = true
