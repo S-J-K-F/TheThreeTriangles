@@ -1,19 +1,21 @@
 extends CharacterBody2D
 
 
-const speed = 100
+var speed = 100
+var max_speed = 100
+var sprint_speed = 200
 var current_dir = "none"
 
-var dash = 500.0
-var tween: Tween
-var dash_velocity = 0.0
-var input_axis
 
 
 func _physics_process(delta):
 	player_movement(delta)
 
 func player_movement(delta):
+	if Input.is_action_pressed("shift"):
+		speed = sprint_speed
+	else:
+		speed = max_speed
 
 	if Input.is_action_pressed("ui_right"):
 		current_dir = "right"
@@ -41,20 +43,7 @@ func player_movement(delta):
 		velocity.y = 0
 	move_and_slide()
 
-func dashFunc():
-	if Input.is_action_just_pressed("shift"):
-		dash_velocity = dash
-		if tween:
-			tween.stop()
-		tween = create_tween()
-		tween.tween_property(self, "dash_velocity", 0, 0.2).set_ease(Tween.EASE_OUT)
 
-func player_movement_two(delta):
-	if input_axis:
-		velocity.x = input_axis * (speed + dash_velocity)
-	else:
-		velocity.x = move_toward(velocity.x, 0, speed)
-	move_and_slide()
 
 func play_anim(movement):
 	var dir = current_dir
