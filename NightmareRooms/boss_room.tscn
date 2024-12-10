@@ -3,11 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://6qiauqvtk6us" path="res://Tiles/Nightmare.png" id="1_s7deh"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_ie64m"]
 [ext_resource type="PackedScene" uid="uid://bfx8dbm0p47y7" path="res://Other/big_door.tscn" id="3_qiq8t"]
-<<<<<<< HEAD
 [ext_resource type="Script" path="res://Entities/player.gd" id="3_virwn"]
-=======
 [ext_resource type="PackedScene" uid="uid://c4xgmpgbklg31" path="res://Music/мистичная_тема.tscn" id="4_31mrt"]
->>>>>>> d9228d654811530e51a54c943633ea46f45df1ae
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4iwmo"]
 texture = ExtResource("1_s7deh")
