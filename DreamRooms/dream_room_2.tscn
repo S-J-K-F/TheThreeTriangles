@@ -835,7 +835,7 @@ shape = SubResource("CircleShape2D_8bt3p")
 position = Vector2(419, 731)
 
 [node name="Player" parent="." instance=ExtResource("5_yy5xx")]
-position = Vector2(249, 39)
+position = Vector2(450, 103)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
