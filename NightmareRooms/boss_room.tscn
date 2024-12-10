@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bq3mugscufjmh"]
+[gd_scene load_steps=8 format=3 uid="uid://bq3mugscufjmh"]
 
 [ext_resource type="Texture2D" uid="uid://6qiauqvtk6us" path="res://Tiles/Nightmare.png" id="1_s7deh"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_ie64m"]
