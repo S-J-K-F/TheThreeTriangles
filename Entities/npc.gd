@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+class_name NonPlayer
+
 const speed = 0
 var current_state = IDLE
 
