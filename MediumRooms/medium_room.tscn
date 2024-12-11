@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://d0ljj57qv76ey"]
+[gd_scene load_steps=8 format=3 uid="uid://d0ljj57qv76ey"]
 
 [ext_resource type="Texture2D" uid="uid://65rw2eo3b3c2" path="res://Tiles/Medium.png" id="1_s8d8i"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_76xf5"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="3_tob8w"]
+[ext_resource type="PackedScene" uid="uid://d2vbsrmakmkua" path="res://Assets/Sprites/triangles/dreamtriangle.tscn" id="4_afdib"]
+[ext_resource type="PackedScene" uid="uid://dm6512ntk7d6t" path="res://Assets/Sprites/triangles/dreammaretriangle.tscn" id="5_851wh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dm3ih"]
 texture = ExtResource("1_s8d8i")
@@ -624,3 +626,9 @@ texture = ExtResource("3_tob8w")
 position = Vector2(514.5, -410.5)
 scale = Vector2(16.2444, 4.07556)
 texture = ExtResource("3_tob8w")
+
+[node name="collectible" parent="." instance=ExtResource("4_afdib")]
+position = Vector2(278, 208)
+
+[node name="collectible 2" parent="." instance=ExtResource("5_851wh")]
+position = Vector2(239, 215)

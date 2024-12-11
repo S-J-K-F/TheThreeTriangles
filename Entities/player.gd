@@ -73,5 +73,6 @@ func play_anim(movement):
 
 
 func _on_area_2d_body_entered(body):
-	if body.is_in_group("triangles"):
-		body.Collect()
+	if body.is_in_group("collectible"):
+		body.Collect ()
+		

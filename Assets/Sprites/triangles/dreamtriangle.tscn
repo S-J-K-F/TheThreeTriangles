@@ -1,21 +1,21 @@
 [gd_scene load_steps=4 format=3 uid="uid://d2vbsrmakmkua"]
 
-[ext_resource type="Script" path="res://Assets/Sprites/triangles/triangles.gd" id="1_445md"]
 [ext_resource type="Texture2D" uid="uid://byhxgp81dvojj" path="res://Assets/Sprites/triangles/dreamTriangle.png" id="1_s6d8j"]
+[ext_resource type="Script" path="res://Assets/Sprites/triangles/dreamtriangle.gd" id="1_se6gu"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_xg8e2"]
-radius = 19.105
+[sub_resource type="CircleShape2D" id="CircleShape2D_4q4rk"]
+radius = 7.07107
 
-[node name="Collectable" type="StaticBody2D" groups=["collectible"]]
+[node name="collectible" type="StaticBody2D" groups=["collectible"]]
 collision_layer = 2
 collision_mask = 2
-script = ExtResource("1_445md")
+script = ExtResource("1_se6gu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-3, 0)
-shape = SubResource("CircleShape2D_xg8e2")
+position = Vector2(1, -2)
+shape = SubResource("CircleShape2D_4q4rk")
 
 [node name="DreamTriangle" type="Sprite2D" parent="."]
-position = Vector2(-5, -2)
-scale = Vector2(0.266129, 0.245968)
+position = Vector2(-0.0624999, -2.59375)
+scale = Vector2(0.113911, 0.103327)
 texture = ExtResource("1_s6d8j")
