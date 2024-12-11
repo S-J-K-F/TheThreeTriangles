@@ -61,7 +61,7 @@ The Three Triangles is a hybrid between a puzzle game and an RPG. You play as a 
 - GUI (Health, action bar, pause menu, inventory, and dialogue selection): Our health system follows a simple 3 life system, and are displayed via a GUI displaying three hearts. We also have a GUI displaying the three triangles needed to be collected, which is used to depict which of them have yet to be collected and which ones you currently have.
 
 # Instructions (Where to find examples of each OOP concept and Godot feature)
-Inheritance:
+Inheritance: You can find inheritance inside each of the NPC scripts besides the NPC base script
 
 Encapsulation:
 
