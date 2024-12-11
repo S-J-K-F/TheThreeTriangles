@@ -1,13 +1,21 @@
 extends CharacterBody2D
 
 
-const speed = 200
+var speed = 100
+var max_speed = 100
+var sprint_speed = 200
 var current_dir = "none"
+
+
 
 func _physics_process(delta):
 	player_movement(delta)
 
 func player_movement(delta):
+	if Input.is_action_pressed("shift"):
+		speed = sprint_speed
+	else:
+		speed = max_speed
 
 	if Input.is_action_pressed("ui_right"):
 		current_dir = "right"
@@ -34,6 +42,8 @@ func player_movement(delta):
 		velocity.x = 0
 		velocity.y = 0
 	move_and_slide()
+
+
 
 func play_anim(movement):
 	var dir = current_dir

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8xeigjkvrsop"
-path="res://.godot/imported/images.jpg-6929c86068487f25a61ab4cff4251b48.ctex"
+uid="uid://wr4ki6o0wper"
+path="res://.godot/imported/bigDoor.png-f723c8fe911be5a35c8e29c9add27d66.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/images.jpg"
-dest_files=["res://.godot/imported/images.jpg-6929c86068487f25a61ab4cff4251b48.ctex"]
+source_file="res://Tiles/bigDoor.png"
+dest_files=["res://.godot/imported/bigDoor.png-f723c8fe911be5a35c8e29c9add27d66.ctex"]
 
 [params]
 

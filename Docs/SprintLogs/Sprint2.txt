@@ -1,0 +1,10 @@
+Completed Tasks:
+- All rooms added
+
+Roadblocks:
+-read me reverting back to blank
+
+Pivots:
+-skey - added more sprites to the dream rooms
+Concerns:
+-more bugs in the future
