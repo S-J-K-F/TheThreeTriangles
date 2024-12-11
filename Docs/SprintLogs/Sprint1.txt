@@ -1,5 +1,5 @@
 Completed Tasks:
--
+- All files and scenes added for now
 
 Roadblocks:
 -none
