@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bgyxk6cg4nfam"]
+[gd_scene load_steps=8 format=3 uid="uid://bgyxk6cg4nfam"]
 
 [ext_resource type="Texture2D" uid="uid://b5vsk2yiet56q" path="res://Tiles/Dream.png" id="1_2iste"]
 [ext_resource type="Texture2D" uid="uid://buantw3a71m5e" path="res://Tiles/Set_C_Interiors.png" id="3_oath4"]
@@ -578,6 +578,7 @@ sources/5 = SubResource("TileSetAtlasSource_jaqhr")
 [node name="Dream Room" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
+position = Vector2(635, 66)
 scale = Vector2(2, 2)
 tile_set = SubResource("TileSet_nvur6")
 format = 2
@@ -587,12 +588,8 @@ layer_1/tile_data = PackedInt32Array(131088, 131077, 4, 131089, 196613, 4, 17, 1
 layer_2/name = "Layer2"
 layer_3/name = "Layer3"
 
-
-[node name="enemy" parent="." instance=ExtResource("3_88oj6")]
-position = Vector2(635, 66)
-
 [node name="HitCtrl-HappyPixieTown" parent="." instance=ExtResource("4_11jrc")]
 position = Vector2(185, 680)
 
 [node name="Player" parent="." instance=ExtResource("5_neo54")]
-position = Vector2(242, 39)
+position = Vector2(1379, 257)
