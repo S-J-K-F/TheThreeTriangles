@@ -2,8 +2,10 @@ extends CharacterBody2D
 
 var enemy_inattack_range = false
 var enemy_attack_cooldown = true
-var health = 100
+var health = 200
 var player_alive = true
+
+var attack_ip = false
 
 const speed = 100
 var current_dir = "none"
@@ -14,6 +16,8 @@ func _ready() -> void:
 
 func _physics_process(delta):
 	player_movement(delta)
+	enemy_attack()
+	attack()
 	
 	if health <= 0:
 		player_alive = false
@@ -47,6 +51,7 @@ func player_movement(delta):
 		play_anim(0)
 		velocity.x = 0
 		velocity.y = 0
+		
 	move_and_slide()
 
 func play_anim(movement):
@@ -57,22 +62,26 @@ func play_anim(movement):
 		if movement == 1:
 			anim.play("WalkRight")
 		elif movement == 0:
-			anim.play("IdleRight")
+			if attack_ip == false:
+				anim.play("IdleRight")
 	if dir == "left":
 		if movement == 1:
 			anim.play("WalkLeft")
 		elif movement == 0:
-			anim.play("IdleLeft")
+			if attack_ip == false:
+				anim.play("IdleLeft")
 	if dir == "down":
 		if movement == 1:
 			anim.play("WalkDown")
 		elif movement == 0:
-			anim.play("IdleDown")
+			if attack_ip == false:
+				anim.play("IdleDown")
 	if dir == "up":
 		if movement == 1:
 			anim.play("WalkUp")
 		elif movement == 0:
-			anim.play("IdleUp")
+			if attack_ip == false:
+				anim.play("IdleUp")
 
 func player():
 	pass
@@ -94,3 +103,24 @@ func enemy_attack():
 		
 func _on_attack_cooldown_timeout():
 		enemy_attack_cooldown = true
+		
+func attack():
+	var dir = current_dir
+	
+	if Input.is_action_just_pressed("attack"):
+		global.player_current_attack = true
+		attack_ip = true
+		if dir == "right":
+			$deal_attack_timer.start()
+		if dir == "left":
+			$deal_attack_timer.start()
+		if dir == "down":
+			$deal_attack_timer.start()
+		if dir == "up":
+			$deal_attack_timer.start()
+
+func _on_deal_attack_timer_timeout():
+	$deal_attackz_timer.stop()
+	global.player_current_attack = false
+	attack_ip = false
+	
