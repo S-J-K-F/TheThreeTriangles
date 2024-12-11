@@ -1,10 +1,10 @@
 Completed Tasks:
--
+- NPC
 
 Roadblocks:
--none
+- Code disapearing
 
 Pivots:
--rlemke - 
+-skey - a tutorial that was being followed
 Concerns:
--rlemke -
+-Skey - Not being able to get everything wanted, inside the game
