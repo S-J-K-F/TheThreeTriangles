@@ -1,10 +1,16 @@
 ## [Jackson Featherston]
-### Sprint 1:
+### Sprint 1: This was the sprint in which we planned most of our ideas. They were lofty goals, but considering the time we had we expected we'd be able to get more done. Anyway, we made a Slack, and created the idea of the game itself.
+Not much happened this sprint other than planning.
 
-### Sprint 2:
+### Sprint 2: By this point we had all splintered off into our own tasks. Sebastian was working on character movement, Jenna was working on importing the tilemaps, Angela was finding sound effects and music on the internet,
+Shaurya was working on making a title screen, and I was working on making assets. I remember spending ages on loosely tracing each walking sprite while also implementing my own style a bit. I believe I also spent the latter half of this
+sprint making the nightmare rooms for the game. 
 
-### Sprint 3:
+### Sprint 3: I finished all of the nightmare rooms, and then redesigned them again to refit the scale of the player and the general purpose of the game being less closed-in. I also added the big door in the boss room. By this point, most of the rooms were done, but we were still falling
+behind, and this was likely the sprint that made us realize we'd need to start scrapping together any points we could because there was no way everything was getting finished on time.
 
-### Sprint 4:
+### Sprint 4: I tried to make the transitions between rooms, but ran into errors nonstop. In the end I had to maked an entirely new branch and spend an entire day fixing merge conflicts, so not exactly the smoothest sprint, but at the very least
+I learned how to fix merge conflicts and got a bit more familiar with github and how it works. 
 
-### Final Thoughts:
+### Final Thoughts: Even if this project didn't really work out as planned, I still came out the other end baring new knowledge, so I can't say that it didn't to its purpose of getting me more familiar with game development, but
+still it was definitely a bumpy and long ride. 
