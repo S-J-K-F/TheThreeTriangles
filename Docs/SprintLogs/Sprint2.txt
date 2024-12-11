@@ -2,9 +2,9 @@ Completed Tasks:
 - All rooms added
 
 Roadblocks:
--none
+-read me reverting back to blank
 
 Pivots:
 -skey - added more sprites to the dream rooms
 Concerns:
--none
+-more bugs in the future
