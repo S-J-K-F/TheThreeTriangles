@@ -1,0 +1,10 @@
+Completed Tasks:
+- NPC
+
+Roadblocks:
+- Code disapearing
+
+Pivots:
+-skey - a tutorial that was being followed
+Concerns:
+-Skey - Not being able to get everything wanted, inside the game
