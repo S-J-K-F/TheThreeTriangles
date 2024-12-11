@@ -6,7 +6,6 @@
 - Creation for diolouge + NPC
 - Creation for Player
 - Creation for room music
-
 ### DAILY LOG:
 - Created all the scenes needed for now
 - Added most of the sprites needed for now
