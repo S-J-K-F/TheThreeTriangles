@@ -5,6 +5,6 @@ Roadblocks:
 -none
 
 Pivots:
--rlemke - 
+-skey - No pivotes needed
 Concerns:
--rlemke -
+-rlemke - Communication
