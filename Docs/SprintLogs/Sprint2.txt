@@ -1,10 +1,10 @@
 Completed Tasks:
--
+- All rooms added
 
 Roadblocks:
 -none
 
 Pivots:
--rlemke - 
+-skey - added more sprites to the dream rooms
 Concerns:
--rlemke -
+-none
