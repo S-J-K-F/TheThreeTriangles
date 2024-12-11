@@ -6,17 +6,7 @@
 - Creation for diolouge + NPC
 - Creation for Player
 - Creation for room music
-### DAILY LOG:
-- Created all the scenes needed for now
-- Added most of the sprites needed for now
-- Fixed the tilmaps not being in the correct places and not fully implemented
-- Basic player movement is in
-- Completed most of the safe rooms. Fixed tile sets for medium rooms.
-- The End room layout completed.
-- Collision added to safe rooms.
-- Creation of NPC is dioloauge half way done
-- NPC almost done
-- Dialogue ability finished
+
 # jfeatherston09:
 ### BIG PICTURE ITEMS:
 - Creation for puzzles
@@ -24,28 +14,25 @@
 - Creation for nightmare rooms and boss room
 - Creation for transitions between rooms
 - Creation for the description for the game.
-### DAILY LOG:
-- Made sprites for the three triangles and the main character(head frame and walk cycles)
-- Made The Layouts For The Nightmare Rooms and the Boss Room
-- big door
-- Room Transitions
+
 # jennaL808:
 ### BIG PICTURE ITEMS:
 - Creation for a GUI system for health points + collected and uncollected triangles + the system for each
 - Creation for TileMapLayers
 - Creation for Collision to TileMaps
 - Creation for Dream Rooms
-### DAILY LOG:
+
 # angelaD707:
 ### BIG PICTURE ITEMS:
 - Created Enemies + Traps + boss
 - Created Title Screen
-### DAILY LOG:
+
 # shauryaO9:
 ### BIG PICTURE ITEMS:
 - Creation for an ending screen
 - Creation for normal rooms
-### DAILY LOG:
+
+
 # Description:
 The Three Triangles is a hybrid between a puzzle game and an RPG. You play as a child who has to journey through the whimsy of his dreams, the horror of his nightmares, and the curious in-between to collect three triangle-shaped objects. Conquer enemies and a multitude of puzzles alike, and enjoy the luxiorious artsytle curated by both the internet and yours truly. Boggle your mind in the dozen or so rooms this game has to offer; don't get to comfortable though, you never know what might be lurking in the darkness, or behind that looming door awaiting you at the end... Move up, down, right, or left, using the respective arrow keys.
 
