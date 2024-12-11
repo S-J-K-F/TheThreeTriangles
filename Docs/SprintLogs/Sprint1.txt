@@ -1,0 +1,10 @@
+Completed Tasks:
+- All files and scenes added for now
+
+Roadblocks:
+-none
+
+Pivots:
+-skey - No pivotes needed
+Concerns:
+-skey - Communication
