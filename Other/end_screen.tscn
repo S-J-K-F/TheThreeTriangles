@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://lyo201k4hqor"]
+[gd_scene load_steps=2 format=3 uid="uid://lyo201k4hqor"]
+
+[ext_resource type="Texture2D" uid="uid://cgdlnnisaucl" path="res://Assets/End Screen.png" id="1_5qyuu"]
 
 [node name="End Screen" type="Node2D"]
+
+[node name="EndScreen" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+texture = ExtResource("1_5qyuu")
