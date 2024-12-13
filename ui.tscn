@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://b35pttp81dnn3"]
+
+[ext_resource type="Script" path="res://ui.gd" id="1_rly22"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_y3dm3"]
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource("1_rly22")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Control/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0.705882, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0.592157, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0.52549, 1)
+theme_override_font_sizes/font_size = 45
+text = "Triangles Collected: "
+label_settings = SubResource("LabelSettings_y3dm3")

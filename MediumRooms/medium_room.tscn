@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://d0ljj57qv76ey"]
+[gd_scene load_steps=9 format=3 uid="uid://d0ljj57qv76ey"]
 
 [ext_resource type="Texture2D" uid="uid://65rw2eo3b3c2" path="res://Tiles/Medium.png" id="1_s8d8i"]
+[ext_resource type="Script" path="res://MediumRooms/medium_room.gd" id="1_u6vw1"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_76xf5"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="3_tob8w"]
 [ext_resource type="PackedScene" uid="uid://d2vbsrmakmkua" path="res://Assets/Sprites/triangles/dreamtriangle.tscn" id="4_afdib"]
-[ext_resource type="PackedScene" uid="uid://dm6512ntk7d6t" path="res://Assets/Sprites/triangles/dreammaretriangle.tscn" id="5_851wh"]
+[ext_resource type="PackedScene" uid="uid://b35pttp81dnn3" path="res://ui.tscn" id="6_aqljp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dm3ih"]
 texture = ExtResource("1_s8d8i")
@@ -592,6 +593,7 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_dm3ih")
 
 [node name="Medium Room" type="Node2D"]
+script = ExtResource("1_u6vw1")
 
 [node name="TileMap" type="TileMap" parent="."]
 y_sort_enabled = true
@@ -604,8 +606,9 @@ layer_2/tile_data = PackedInt32Array(262153, 655361, 17, 327689, 655361, 7, 3932
 layer_3/name = "Layer3"
 layer_3/tile_data = PackedInt32Array(655376, 131073, 3, 327709, 131073, 3, 524333, 196609, 2, 262158, 393217, 0, 327694, 393217, 1, 262187, 1, 2, 458793, 1, 2, 393234, 1, 2, 720936, 1, 2, 524315, 1, 2, 720928, 196609, 2, 524298, 196609, 2, 393250, 65537, 2, 655412, 65537, 3, 589845, 65537, 3, 655398, 393217, 2, 327704, 393217, 2, 720922, 393217, 2, 393229, 393217, 2, 852018, 458753, 1, 983076, 458753, 1, 393269, 458753, 1, 851980, 458753, 1, 1048628, 458753, 2, 1048604, 458753, 2, 917522, 196609, 2, 917545, 131073, 2, 393268, 131073, 2, 983088, 131073, 2, 1048584, 65537, 2, 917527, 131073, 3, 655414, 983041, 16, 720950, 917505, 16, 786486, 851969, 16, 655368, 851969, 16, 720904, 917505, 16, 786440, 983041, 16)
 
-[node name="Player" parent="." instance=ExtResource("3_76xf5")]
+[node name="Player" parent="." node_paths=PackedStringArray("currentLevel") instance=ExtResource("3_76xf5")]
 position = Vector2(197, 193)
+currentLevel = NodePath("..")
 
 [node name="Images" type="Sprite2D" parent="."]
 position = Vector2(-602.5, 375)
@@ -630,5 +633,5 @@ texture = ExtResource("3_tob8w")
 [node name="collectible" parent="." instance=ExtResource("4_afdib")]
 position = Vector2(278, 208)
 
-[node name="collectible 2" parent="." instance=ExtResource("5_851wh")]
-position = Vector2(239, 215)
+[node name="UI" parent="." instance=ExtResource("6_aqljp")]
+unique_name_in_owner = true

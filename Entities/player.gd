@@ -5,6 +5,8 @@ var speed = 100
 var max_speed = 100
 var sprint_speed = 200
 var current_dir = "none"
+@export var currentLevel:Node2D
+
 
 
 
@@ -74,5 +76,6 @@ func play_anim(movement):
 
 func _on_area_2d_body_entered(body):
 	if body.is_in_group("collectible"):
+		currentLevel.update_ui_score(body.value)
 		body.Collect ()
 		

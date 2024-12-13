@@ -4,17 +4,19 @@
 [ext_resource type="Script" path="res://Assets/Sprites/triangles/dreammaretriangle.gd" id="1_oubpb"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8avco"]
-height = 108.0
+radius = 7.0
+height = 48.0
 
-[node name="collectible 2" type="StaticBody2D" groups=["collectible 2"]]
+[node name="collectible" type="StaticBody2D" groups=["collectible"]]
 collision_layer = 2
 collision_mask = 2
 script = ExtResource("1_oubpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-4, -7)
+position = Vector2(-1, 2)
 shape = SubResource("CapsuleShape2D_8avco")
 
 [node name="DreammareTriangle" type="Sprite2D" parent="."]
-position = Vector2(-1, -15)
+position = Vector2(1, -1)
+scale = Vector2(0.472656, 0.441406)
 texture = ExtResource("1_42tl6")
