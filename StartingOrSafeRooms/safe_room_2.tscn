@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://jligjfhi4l5i"]
+[gd_scene load_steps=9 format=3 uid="uid://jligjfhi4l5i"]
 
 [ext_resource type="Texture2D" uid="uid://5qi54kmoqqp4" path="res://Tiles/Safe.png" id="1_b6ulo"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="2_ue3wt"]
+[ext_resource type="Script" path="res://StartingOrSafeRooms/sr3.gd" id="3_dpdri"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_tfkau"]
 [ext_resource type="PackedScene" uid="uid://c6q1l4ekp5viy" path="res://Music/hit_ctrl_happy_pixie_town.tscn" id="4_bpjfj"]
 
@@ -283,6 +284,7 @@ scale = Vector2(3.55821, 2.44889)
 texture = ExtResource("2_ue3wt")
 
 [node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("3_dpdri")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(64, -35)
