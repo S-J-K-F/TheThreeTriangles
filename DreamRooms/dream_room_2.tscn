@@ -194,6 +194,7 @@ texture = ExtResource("1_0l8wu")
 0:22/0 = 0
 1:22/0 = 0
 2:22/0 = 0
+2:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:22/0 = 0
 4:22/0 = 0
 4:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -825,6 +826,7 @@ scale = Vector2(4.81556, 3.89556)
 texture = ExtResource("4_6k4v6")
 
 [node name="Area2D" type="Area2D" parent="."]
+position = Vector2(1, 0)
 script = ExtResource("6_kulp2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
