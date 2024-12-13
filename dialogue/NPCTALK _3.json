@@ -1,11 +1,10 @@
 [
-	{"name": "Stranger", "text": "You will be judged"},
-	{"name": "Caleb", "text": "What? Who are you?"},
-	{"name": "Stranger", "text": "There will be hard obstacles for you to pass"},
-	{"name": "Caleb", "text": "Okay? Can you tell me where I am?"},
+	{"name": "Stranger", "text": "You've survived"},
+	{"name": "Caleb", "text": "What was that thing!"},
+	{"name": "Stranger", "text": "There will be many more of them."},
+	{"name": "Caleb", "text": "Wait, did you just respond"},
 	{"name": "Stranger", "text": "There will be others"},
-	{"name": "Caleb", "text": "Oh, so you're just not going to respond."},
-	{"name": "Stranger", "text": "Talk to them"},
-	{"name": "Stranger", "text": "And be judged"},
+	{"name": "Caleb", "text": "Of course not."},
+	{"name": "Stranger", "text": "You likely won't survive"},
 	{"name": "Caleb", "text": "Great"}
 ]

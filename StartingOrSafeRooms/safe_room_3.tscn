@@ -4,7 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="2_2t0uq"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_2twjv"]
 [ext_resource type="PackedScene" uid="uid://c6q1l4ekp5viy" path="res://Music/hit_ctrl_happy_pixie_town.tscn" id="4_jykgh"]
-[ext_resource type="PackedScene" path="res://Entities/npc_4.tscn" id="5_c6a1p"]
+
+[ext_resource type="PackedScene" uid="uid://c7uvu0eyuhfcb" path="res://Entities/npc_4.tscn" id="5_c6a1p"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6l0q1"]
 texture = ExtResource("1_sgiut")
@@ -275,6 +277,9 @@ texture = ExtResource("2_2t0uq")
 position = Vector2(224, -10)
 shape = SubResource("CircleShape2D_k0tak")
 
+[node name="npc_4" parent="." instance=ExtResource("5_c6a1p")]
+position = Vector2(316, -14)
+
 [node name="Player" parent="." instance=ExtResource("3_2twjv")]
 position = Vector2(228, 105)
 
@@ -282,9 +287,6 @@ position = Vector2(228, 105)
 position = Vector2(282, 451)
 volume_db = 24.0
 pitch_scale = 0.16
-
-[node name="npc_4" parent="." instance=ExtResource("5_c6a1p")]
-position = Vector2(315, 5)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

@@ -1,11 +1,11 @@
 [
-	{"name": "Stranger", "text": "You will be judged"},
-	{"name": "Caleb", "text": "What? Who are you?"},
-	{"name": "Stranger", "text": "There will be hard obstacles for you to pass"},
-	{"name": "Caleb", "text": "Okay? Can you tell me where I am?"},
-	{"name": "Stranger", "text": "There will be others"},
-	{"name": "Caleb", "text": "Oh, so you're just not going to respond."},
-	{"name": "Stranger", "text": "Talk to them"},
-	{"name": "Stranger", "text": "And be judged"},
-	{"name": "Caleb", "text": "Great"}
+	{"name": "Mom", "text": "Did you sleep well?"},
+	{"name": "Caleb", "text": "Yeah"},
+	{"name": "Mom", "text": "You sure, you don't looks so well?"},
+	{"name": "Caleb", "text": "Yes"},
+	{"name": "Mom", "text": "Well okay, better get ready for school"},
+	{"name": "Caleb", "text": "..."},
+	{"name": "Mom", "text": "Have a good day"},
+	{"name": "Mom", "text": "And stay safe"},
+	{"name": "Caleb", "text": "..."}
 ]

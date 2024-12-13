@@ -1,6 +1,6 @@
-extends Control
+class_name YapperPlayer extends Control
 
-class_name YapperPlayer
+
 
 signal dialogue_finished
 
