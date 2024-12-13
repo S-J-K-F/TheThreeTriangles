@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var speed = 40
+var speed = 20
 var player_chase = false
 var player = null
 
@@ -12,7 +12,7 @@ var can_take_damage = true
 func _physics_process(delta: float) -> void:
 	deal_with_damage()
 	
-	if player_chase:
+	if player_chase == true:
 		position += (player.position - position)/speed
 		
 		$AnimatedSprite2D.play("walk")

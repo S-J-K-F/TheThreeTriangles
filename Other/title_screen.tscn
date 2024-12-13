@@ -5,7 +5,7 @@ script/source = "extends Control
 
 
 func _on_start_button_pressed() -> void:
-	get_tree().change_scene_to_file(\"res://Other/main_scene.tscn\")
+	get_tree().change_scene_to_file(\"res://StartingOrSafeRooms/safe_room.tscn\")
 
 
 func _on_quit_pressed() -> void:
@@ -49,5 +49,5 @@ theme_override_font_sizes/font_size = 54
 text = "The Three Triangles"
 
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
