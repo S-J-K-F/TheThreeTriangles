@@ -305,14 +305,14 @@ texture = ExtResource("2_bdnfg")
 position = Vector2(352, -43)
 shape = SubResource("CircleShape2D_vs0bn")
 
+[node name="npc2" parent="." instance=ExtResource("5_2mkfs")]
+position = Vector2(286, -27)
+
 [node name="Player" parent="." instance=ExtResource("3_afh3q")]
 position = Vector2(77, 14)
 
 [node name="HitCtrl-HappyPixieTown" parent="." instance=ExtResource("4_liuqh")]
 position = Vector2(227, 389)
-
-[node name="npc2" parent="." instance=ExtResource("5_2mkfs")]
-position = Vector2(286, -27)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
