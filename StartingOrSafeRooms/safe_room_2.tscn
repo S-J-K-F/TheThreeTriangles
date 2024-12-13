@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://jligjfhi4l5i"]
+[gd_scene load_steps=9 format=3 uid="uid://jligjfhi4l5i"]
 
 [ext_resource type="Texture2D" uid="uid://5qi54kmoqqp4" path="res://Tiles/Safe.png" id="1_b6ulo"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="2_ue3wt"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_tfkau"]
 [ext_resource type="PackedScene" uid="uid://c6q1l4ekp5viy" path="res://Music/hit_ctrl_happy_pixie_town.tscn" id="4_bpjfj"]
+[ext_resource type="PackedScene" uid="uid://byybkxy6pjhdv" path="res://Entities/npc_3.tscn" id="5_cnaag"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c2c3f"]
 texture = ExtResource("1_b6ulo")
@@ -293,6 +294,9 @@ position = Vector2(411, 17)
 
 [node name="HitCtrl-HappyPixieTown" parent="." instance=ExtResource("4_bpjfj")]
 position = Vector2(86, 440)
+
+[node name="npc_3" parent="." instance=ExtResource("5_cnaag")]
+position = Vector2(147, -37)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
