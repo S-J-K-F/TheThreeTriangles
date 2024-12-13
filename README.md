@@ -50,14 +50,23 @@ The Three Triangles is a hybrid between a puzzle game and an RPG. You play as a 
 # Instructions (Where to find examples of each OOP concept and Godot feature)
 Inheritance: You can find inheritance with each of the "NPC_#"s besides the "NPC".
 
-Encapsulation:
+Encapsulation: Should also be inside the NPC (If not it was unimplemented)
 
-Polymorphism:
+Polymorphism: Should also be inside the NPC (If not it was unimplemented)
 
-Abstraction:
+Abstraction: Should also be inside the NPC (If not it was unimplemented)
 
 ### Godot Features:
 Node Types:
+- Character2D
+- Area
+- CollisionShape2D
+- Timer
+- Control Node
+- NinePatchRect
+- RichTextLabel
+- AnimatedSprite2D
+- 
 
 Signals:
 
