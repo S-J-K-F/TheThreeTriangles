@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://n03bj42g4u5o"]
+[gd_scene load_steps=12 format=3 uid="uid://n03bj42g4u5o"]
 
 [ext_resource type="Texture2D" uid="uid://b5vsk2yiet56q" path="res://Tiles/Dream.png" id="1_v6e8i"]
 [ext_resource type="Texture2D" uid="uid://buantw3a71m5e" path="res://Tiles/Set_C_Interiors.png" id="2_ysiq4"]
 [ext_resource type="Texture2D" uid="uid://ctvsti8lfobw4" path="res://Tiles/Set_D_Interiors.png" id="3_vq27p"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="5_jbx5u"]
 [ext_resource type="PackedScene" uid="uid://c6q1l4ekp5viy" path="res://Music/hit_ctrl_happy_pixie_town.tscn" id="5_vny7c"]
+[ext_resource type="Script" path="res://DreamRooms/dr3.gd" id="6_db181"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uit0k"]
 texture = ExtResource("1_v6e8i")
@@ -855,6 +856,9 @@ sources/0 = SubResource("TileSetAtlasSource_uit0k")
 sources/4 = SubResource("TileSetAtlasSource_xgdqv")
 sources/3 = SubResource("TileSetAtlasSource_oguvw")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_2piek"]
+radius = 17.0
+
 [node name="Dream Room 3" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -890,3 +894,14 @@ position = Vector2(54, 397)
 
 [node name="Player" parent="." instance=ExtResource("5_jbx5u")]
 position = Vector2(950, 405)
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(1, 0)
+script = ExtResource("6_db181")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(931, 538)
+shape = SubResource("CircleShape2D_2piek")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
