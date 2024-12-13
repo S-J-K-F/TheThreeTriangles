@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://3bh17xr1yfug"]
+[gd_scene load_steps=10 format=3 uid="uid://3bh17xr1yfug"]
 
 [ext_resource type="Texture2D" uid="uid://5qi54kmoqqp4" path="res://Tiles/Safe.png" id="1_o0uus"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_53jon"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="3_aorc4"]
 [ext_resource type="PackedScene" uid="uid://pmx6bflr3fn2" path="res://Entities/npc.tscn" id="4_l81pb"]
+[ext_resource type="Script" path="res://StartingOrSafeRooms/sr1.gd" id="5_ecj4e"]
 [ext_resource type="PackedScene" uid="uid://c6q1l4ekp5viy" path="res://Music/hit_ctrl_happy_pixie_town.tscn" id="5_p3j77"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xslmf"]
@@ -289,13 +290,14 @@ scale = Vector2(1.09716, 0.777531)
 texture = ExtResource("3_aorc4")
 
 [node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("5_ecj4e")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(416, -33)
 shape = SubResource("CircleShape2D_oka3m")
 
-[node name="Player2" parent="." instance=ExtResource("3_53jon")]
-position = Vector2(248, 38)
-
 [node name="HitCtrl-HappyPixieTown" parent="." instance=ExtResource("5_p3j77")]
 position = Vector2(177, 391)
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
