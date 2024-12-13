@@ -48,16 +48,17 @@ func move(delta):
 	if !is_chatting:
 		position += dir * speed * delta
 
-func _on_chat_detection_area_body_entered(body:Node2D) -> void:
+func _on_chat_detection_area_body_entered(body):
 	if body.has_method("player"):
 		player = body
 		player_in_chat_zone = true
 
 
-func _on_chat_detection_area_area_exited(area:Area2D) -> void:
-	player_in_chat_zone = false
+func _on_chat_detection_area_area_exited(body):
+	if body.has_method("player"):
+		player_in_chat_zone = false
 
 
-func _on_timer_timeout() -> void:
+func _on_timer_timeout():
 	$Timer.wait_time = choose([0.5, 1, 1.5])
 	current_state = choose([IDLE, NEW_DIR, MOVE])
