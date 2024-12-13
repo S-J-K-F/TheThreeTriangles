@@ -1,23 +1,23 @@
 [gd_scene load_steps=5 format=3 uid="uid://bfx8dbm0p47y7"]
 
-[ext_resource type="Texture2D" uid="uid://jb5pbokpjm54" path="res://bigdoormonochromatic.png" id="1_y2aqq"]
+[ext_resource type="Texture2D" uid="uid://dlviq6blt7ogw" path="res://Sprites/bigdoorPLEASEWORKspritesheet.png" id="1_rgf3o"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8fbg0"]
-atlas = ExtResource("1_y2aqq")
-region = Rect2(0, 0, 117, 183)
+[sub_resource type="AtlasTexture" id="AtlasTexture_ppn50"]
+atlas = ExtResource("1_rgf3o")
+region = Rect2(113, 0, 113, 183)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1bkr1"]
-atlas = ExtResource("1_y2aqq")
-region = Rect2(117, 0, 117, 183)
+[sub_resource type="AtlasTexture" id="AtlasTexture_powdk"]
+atlas = ExtResource("1_rgf3o")
+region = Rect2(0, 0, 113, 183)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_rctjc"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8fbg0")
+"texture": SubResource("AtlasTexture_ppn50")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1bkr1")
+"texture": SubResource("AtlasTexture_powdk")
 }],
 "loop": true,
 "name": &"default",

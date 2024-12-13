@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmvh7rjtd81o0"]
+
+[ext_resource type="PackedScene" uid="uid://pmx6bflr3fn2" path="res://Entities/npc.tscn" id="1_pdjlb"]
+[ext_resource type="Script" path="res://Entities/npc_2.gd" id="2_2it5v"]
+[ext_resource type="Script" path="res://dialogue/dialogueplayer2.gd" id="3_0y3j7"]
+
+[node name="npc_2" instance=ExtResource("1_pdjlb")]
+script = ExtResource("2_2it5v")
+
+[node name="Dialogue" parent="." index="4"]
+script = ExtResource("3_0y3j7")

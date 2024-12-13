@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8xeigjkvrsop"
-path="res://.godot/imported/images.jpg-6929c86068487f25a61ab4cff4251b48.ctex"
+uid="uid://dpgbjbjah2p2f"
+path="res://.godot/imported/dialogue_box.png-0cd05080b3195ee7b370d51afe7eaf09.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/images.jpg"
-dest_files=["res://.godot/imported/images.jpg-6929c86068487f25a61ab4cff4251b48.ctex"]
+source_file="res://Assets/Sprites/dialogue_box.png"
+dest_files=["res://.godot/imported/dialogue_box.png-0cd05080b3195ee7b370d51afe7eaf09.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

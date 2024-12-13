@@ -7,12 +7,18 @@ var player_alive = true
 
 var attack_ip = false
 
-const speed = 100
-var current_dir = "none"
+
+
 
 func _ready() -> void:
 	$AnimatedSprite2D.play("IdleDown")
 	
+var speed = 100
+var max_speed = 100
+var sprint_speed = 200
+var current_dir = "none"
+
+
 
 func _physics_process(delta):
 	player_movement(delta)
@@ -26,6 +32,10 @@ func _physics_process(delta):
 		self.queue_free()
 
 func player_movement(delta):
+	if Input.is_action_pressed("shift"):
+		speed = sprint_speed
+	else:
+		speed = max_speed
 
 	if Input.is_action_pressed("ui_right"):
 		current_dir = "right"
@@ -53,6 +63,8 @@ func player_movement(delta):
 		velocity.y = 0
 		
 	move_and_slide()
+
+
 
 func play_anim(movement):
 	var dir = current_dir

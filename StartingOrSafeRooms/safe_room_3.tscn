@@ -1,7 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://c4d652egeh85f"]
+[gd_scene load_steps=9 format=3 uid="uid://c4d652egeh85f"]
 
 [ext_resource type="Texture2D" uid="uid://5qi54kmoqqp4" path="res://Tiles/Safe.png" id="1_sgiut"]
-[ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Entities/images.jpg" id="2_2t0uq"]
+[ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="2_2t0uq"]
+[ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_2twjv"]
+[ext_resource type="PackedScene" uid="uid://c6q1l4ekp5viy" path="res://Music/hit_ctrl_happy_pixie_town.tscn" id="4_jykgh"]
+
+[ext_resource type="PackedScene" uid="uid://c7uvu0eyuhfcb" path="res://Entities/npc_4.tscn" id="5_c6a1p"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6l0q1"]
 texture = ExtResource("1_sgiut")
@@ -219,6 +224,9 @@ texture = ExtResource("1_sgiut")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_6l0q1")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_k0tak"]
+radius = 17.0
+
 [node name="Safe Room 3" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -262,3 +270,23 @@ texture = ExtResource("2_2t0uq")
 position = Vector2(-432.701, 132.5)
 scale = Vector2(3.55821, 2.44889)
 texture = ExtResource("2_2t0uq")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(224, -10)
+shape = SubResource("CircleShape2D_k0tak")
+
+[node name="npc_4" parent="." instance=ExtResource("5_c6a1p")]
+position = Vector2(316, -14)
+
+[node name="Player" parent="." instance=ExtResource("3_2twjv")]
+position = Vector2(228, 105)
+
+[node name="HitCtrl-HappyPixieTown" parent="." instance=ExtResource("4_jykgh")]
+position = Vector2(282, 451)
+volume_db = 24.0
+pitch_scale = 0.16
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

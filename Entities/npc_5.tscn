@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://d2xc5i1e4gj12"]
+
+[ext_resource type="PackedScene" uid="uid://pmx6bflr3fn2" path="res://Entities/npc.tscn" id="1_ggoub"]
+[ext_resource type="Script" path="res://Entities/npc_5.gd" id="2_xj8yt"]
+[ext_resource type="Texture2D" uid="uid://pnq82q6r7a12" path="res://Sprites/C_People.png" id="3_ov8ws"]
+[ext_resource type="Script" path="res://dialogue/dialogueplayer5.gd" id="3_pcdnb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ncu7j"]
+atlas = ExtResource("3_ov8ws")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_whd4g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ncu7j")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="npc_5" instance=ExtResource("1_ggoub")]
+script = ExtResource("2_xj8yt")
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+visible = false
+
+[node name="AnimatedSprite2DReal" type="AnimatedSprite2D" parent="." index="1"]
+sprite_frames = SubResource("SpriteFrames_whd4g")
+animation = &"Idle"
+
+[node name="Dialogue" parent="." index="5"]
+script = ExtResource("3_pcdnb")
