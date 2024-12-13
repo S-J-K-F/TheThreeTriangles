@@ -1,7 +1,5 @@
 class_name NonPlayer extends CharacterBody2D
 
-
-
 const speed = 0
 var current_state = IDLE
 
@@ -34,7 +32,7 @@ func _process(delta):
 				pass
 			NEW_DIR:
 				dir = choose([Vector2.RIGHT, Vector2.UP, Vector2.LEFT, Vector2.DOWN])
-			MOVE: 
+			MOVE:
 				move(delta)
 	if Input.is_action_just_pressed("select"):
 		print("chatting with npc")

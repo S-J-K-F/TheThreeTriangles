@@ -1,7 +1,5 @@
 class_name YapperPlayer extends Control
 
-
-
 signal dialogue_finished
 
 @export_file("*.json") var d_file
@@ -14,8 +12,8 @@ func _ready():
 	$NinePatchRect.visible = false
 
 func start():
+	print("yes")
 	if d_active:
-		print("yes")
 		return
 	d_active = true
 	$NinePatchRect.visible = true
