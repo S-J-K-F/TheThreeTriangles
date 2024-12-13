@@ -1,5 +1,5 @@
 class_name YapperPlayer extends Control
-
+ 
 signal dialogue_finished
 
 @export_file("*.json") var d_file
