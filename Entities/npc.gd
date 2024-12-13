@@ -1,7 +1,5 @@
 class_name NonPlayer extends CharacterBody2D
 
-
-
 const speed = 0
 var current_state = IDLE
 
@@ -34,7 +32,7 @@ func _process(delta):
 				pass
 			NEW_DIR:
 				dir = choose([Vector2.RIGHT, Vector2.UP, Vector2.LEFT, Vector2.DOWN])
-			MOVE: 
+			MOVE:
 				move(delta)
 	if Input.is_action_just_pressed("select"):
 		print("chatting with npc")
@@ -50,16 +48,23 @@ func move(delta):
 	if !is_chatting:
 		position += dir * speed * delta
 
-func _on_chat_detection_area_body_entered(body:Node2D) -> void:
+func _on_chat_detection_area_body_entered(body):
 	if body.has_method("player"):
 		player = body
 		player_in_chat_zone = true
 
 
-func _on_chat_detection_area_area_exited(area:Area2D) -> void:
-	player_in_chat_zone = false
+func _on_chat_detection_area_area_exited(body):
+	if body.has_method("player"):
+		player_in_chat_zone = false
 
 
-func _on_timer_timeout() -> void:
+func _on_timer_timeout():
 	$Timer.wait_time = choose([0.5, 1, 1.5])
 	current_state = choose([IDLE, NEW_DIR, MOVE])
+
+
+
+func _on_dialogue_dialogue_finished() -> void:
+	is_chatting = false
+	is_roaming = true

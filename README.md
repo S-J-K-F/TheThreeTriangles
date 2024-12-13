@@ -66,8 +66,19 @@ Node Types:
 - NinePatchRect
 - RichTextLabel
 - AnimatedSprite2D
-- 
+- 2D Nodes
+- AudioStreamPlayer
+- Tilemap
+- Sprite2D
 
 Signals:
-
+- 
 Scenes:
+- Enemy
+- npc
+- npc_2
+- npc_3
+- npc_4
+- npc_5
+- player
+- 
