@@ -12,5 +12,6 @@ func _on_body_exited(body) -> void:
 
 func _process(delta):
 	if entered == true:
-		if Input.is_action_just_pressed("ui_select"):
+		if Input.is_action_just_pressed("select"):
+			print("hi")
 			get_tree().change_scene_to_file("res://DreamRooms/dream_room_2.tscn")
