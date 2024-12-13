@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://b6si22gsjoum5"]
+[gd_scene load_steps=8 format=3 uid="uid://b6si22gsjoum5"]
 
 [ext_resource type="Texture2D" uid="uid://6qiauqvtk6us" path="res://Tiles/Nightmare.png" id="1_58enj"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_n2yis"]
 [ext_resource type="PackedScene" uid="uid://c4xgmpgbklg31" path="res://Music/мистичная_тема.tscn" id="3_nqw06"]
+[ext_resource type="Script" path="res://NightmareRooms/nd2.gd" id="4_qeh8x"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m76tn"]
 texture = ExtResource("1_58enj")
@@ -92,6 +93,9 @@ texture = ExtResource("1_58enj")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_m76tn")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_64lpi"]
+radius = 21.0
+
 [node name="Nightmare Room 2" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -109,3 +113,14 @@ position = Vector2(156, 407)
 
 [node name="МистичнаяТема" parent="." instance=ExtResource("3_nqw06")]
 position = Vector2(360, 363)
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(1, 0)
+script = ExtResource("4_qeh8x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(496, 111)
+shape = SubResource("CircleShape2D_64lpi")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

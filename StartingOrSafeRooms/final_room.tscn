@@ -1,10 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://nlag66uclb57"]
+[gd_scene load_steps=10 format=3 uid="uid://nlag66uclb57"]
 
 [ext_resource type="Texture2D" uid="uid://5qi54kmoqqp4" path="res://Tiles/Safe.png" id="1_ylyem"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="2_5bma7"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_idrlp"]
 [ext_resource type="PackedScene" uid="uid://c6q1l4ekp5viy" path="res://Music/hit_ctrl_happy_pixie_town.tscn" id="4_n0d5c"]
 [ext_resource type="PackedScene" uid="uid://d2xc5i1e4gj12" path="res://Entities/npc_5.tscn" id="5_347d7"]
+
+[ext_resource type="Script" path="res://StartingOrSafeRooms/fd.gd" id="6_dj0hg"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7ifaa"]
 texture = ExtResource("1_ylyem")
@@ -240,6 +243,9 @@ texture = ExtResource("1_ylyem")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_7ifaa")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_y1h6y"]
+radius = 17.0294
+
 [node name="Final Room" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -292,3 +298,14 @@ position = Vector2(216, 458)
 
 [node name="HitCtrl-HappyPixieTown" parent="." instance=ExtResource("4_n0d5c")]
 position = Vector2(560, 796)
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(1, 0)
+script = ExtResource("6_dj0hg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(943, 285)
+shape = SubResource("CircleShape2D_y1h6y")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
