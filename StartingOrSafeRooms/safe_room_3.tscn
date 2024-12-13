@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="2_2t0uq"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_2twjv"]
 [ext_resource type="PackedScene" uid="uid://c6q1l4ekp5viy" path="res://Music/hit_ctrl_happy_pixie_town.tscn" id="4_jykgh"]
-[ext_resource type="PackedScene" uid="uid://dnmn4rekv67k0" path="res://Entities/npc_4.tscn" id="5_c6a1p"]
+[ext_resource type="PackedScene" path="res://Entities/npc_4.tscn" id="5_c6a1p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6l0q1"]
 texture = ExtResource("1_sgiut")
