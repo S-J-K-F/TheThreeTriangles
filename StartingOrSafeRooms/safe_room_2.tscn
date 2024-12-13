@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://StartingOrSafeRooms/sr3.gd" id="3_dpdri"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_tfkau"]
 [ext_resource type="PackedScene" uid="uid://c6q1l4ekp5viy" path="res://Music/hit_ctrl_happy_pixie_town.tscn" id="4_bpjfj"]
-[ext_resource type="PackedScene" path="res://Entities/npc_3.tscn" id="5_cnaag"]
+[ext_resource type="PackedScene" uid="uid://h8001nth85kx" path="res://Entities/npc_3.tscn" id="5_cnaag"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c2c3f"]
 texture = ExtResource("1_b6ulo")

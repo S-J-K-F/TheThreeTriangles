@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bqsuwf8b13g63"]
+[gd_scene load_steps=8 format=3 uid="uid://bqsuwf8b13g63"]
 
 [ext_resource type="Texture2D" uid="uid://65rw2eo3b3c2" path="res://Tiles/Medium.png" id="1_lm4ib"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="2_iy32v"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="3_0obju"]
+[ext_resource type="Script" path="res://MediumRooms/md2.gd" id="4_aw4mq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a22fe"]
 texture = ExtResource("1_lm4ib")
@@ -586,6 +587,9 @@ separation = Vector2i(1, 1)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_a22fe")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_6i8td"]
+radius = 185.874
+
 [node name="Medium Room 2" type="Node2D"]
 metadata/_edit_lock_ = true
 
@@ -601,7 +605,7 @@ layer_3/name = "Layer3"
 layer_3/tile_data = PackedInt32Array(589861, 983040, 14, 1048619, 917504, 12, 655410, 917504, 12, 327729, 917504, 12, 917541, 917504, 12, 327722, 917504, 12, 1114165, 917504, 12, 1179685, 917504, 14, 393265, 917504, 14, 720918, 983040, 13, 327688, 983040, 13, 917518, 983040, 13, 327700, 983040, 13, 589835, 917504, 12, 327697, 917504, 12, 1048597, 917504, 12, 983047, 917504, 14, 720915, 917504, 14, 1114123, 917504, 11, 458767, 917504, 11, 1048623, 983040, 10, 458805, 983040, 10, 458795, 983040, 10, 262182, 983040, 10, 917537, 983040, 10, 720949, 983040, 10, 1048594, 917504, 12, 655389, 851968, 16, 393247, 917504, 10, 1114139, 917504, 10, 327706, 917504, 10, 458771, 917504, 10, 1179682, 917504, 10, 720935, 917504, 10, 262155, 917504, 10, 720911, 917504, 12, 458775, 196608, 2, 1114143, 196608, 2, 262177, 196608, 2, 655404, 393216, 2, 983080, 393216, 2, 786479, 393216, 2, 917524, 65536, 2, 327691, 65536, 2, 852022, 983040, 16, 851975, 983040, 16, 720903, 917504, 16, 786439, 851968, 16, 786486, 851968, 16, 720950, 917504, 16)
 
 [node name="Player" parent="." instance=ExtResource("2_iy32v")]
-position = Vector2(126, 182)
+position = Vector2(147, 189)
 
 [node name="Images" type="Sprite2D" parent="."]
 position = Vector2(454, 578.25)
@@ -622,3 +626,14 @@ texture = ExtResource("3_0obju")
 position = Vector2(-285, 55)
 scale = Vector2(3.52667, 3.54222)
 texture = ExtResource("3_0obju")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(1, 0)
+script = ExtResource("4_aw4mq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(973, 182)
+shape = SubResource("CircleShape2D_6i8td")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

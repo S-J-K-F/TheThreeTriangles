@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://d0ljj57qv76ey"]
+[gd_scene load_steps=8 format=3 uid="uid://d0ljj57qv76ey"]
 
 [ext_resource type="Texture2D" uid="uid://65rw2eo3b3c2" path="res://Tiles/Medium.png" id="1_s8d8i"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_76xf5"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="3_tob8w"]
+[ext_resource type="Script" path="res://MediumRooms/md1.gd" id="4_onp3a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dm3ih"]
 texture = ExtResource("1_s8d8i")
@@ -589,6 +590,9 @@ separation = Vector2i(1, 1)
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_dm3ih")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_os2g8"]
+radius = 185.874
+
 [node name="Medium Room" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -624,3 +628,14 @@ texture = ExtResource("3_tob8w")
 position = Vector2(514.5, -410.5)
 scale = Vector2(16.2444, 4.07556)
 texture = ExtResource("3_tob8w")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(1, 0)
+script = ExtResource("4_onp3a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(973, 182)
+shape = SubResource("CircleShape2D_os2g8")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

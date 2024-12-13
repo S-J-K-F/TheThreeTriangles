@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://bq3mugscufjmh"]
+[gd_scene load_steps=9 format=3 uid="uid://bq3mugscufjmh"]
 
 [ext_resource type="Texture2D" uid="uid://6qiauqvtk6us" path="res://Tiles/Nightmare.png" id="1_s7deh"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_ie64m"]
 [ext_resource type="PackedScene" uid="uid://bfx8dbm0p47y7" path="res://Other/big_door.tscn" id="3_qiq8t"]
 [ext_resource type="PackedScene" uid="uid://c4xgmpgbklg31" path="res://Music/мистичная_тема.tscn" id="4_31mrt"]
+[ext_resource type="Script" path="res://NightmareRooms/bd1.gd" id="5_6wu6n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4iwmo"]
 texture = ExtResource("1_s7deh")
@@ -86,6 +87,9 @@ texture = ExtResource("1_s7deh")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_4iwmo")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_cpnt7"]
+radius = 50.0
+
 [node name="Boss Room" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -106,3 +110,14 @@ position = Vector2(245, 241)
 
 [node name="МистичнаяТема" parent="." instance=ExtResource("4_31mrt")]
 position = Vector2(394, 428)
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(1, 0)
+script = ExtResource("5_6wu6n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(246, -143)
+shape = SubResource("CircleShape2D_cpnt7")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
