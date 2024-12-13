@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://nlag66uclb57"]
+[gd_scene load_steps=8 format=3 uid="uid://nlag66uclb57"]
 
 [ext_resource type="Texture2D" uid="uid://5qi54kmoqqp4" path="res://Tiles/Safe.png" id="1_ylyem"]
 [ext_resource type="Texture2D" uid="uid://b8xeigjkvrsop" path="res://Assets/Sprites/images.jpg" id="2_5bma7"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_idrlp"]
 [ext_resource type="PackedScene" uid="uid://c6q1l4ekp5viy" path="res://Music/hit_ctrl_happy_pixie_town.tscn" id="4_n0d5c"]
+[ext_resource type="PackedScene" path="res://Entities/npc_5.tscn" id="5_347d7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7ifaa"]
 texture = ExtResource("1_ylyem")
@@ -282,6 +283,9 @@ texture = ExtResource("2_5bma7")
 position = Vector2(-320, 397)
 scale = Vector2(3.55821, 2.44889)
 texture = ExtResource("2_5bma7")
+
+[node name="npc_5" parent="." instance=ExtResource("5_347d7")]
+position = Vector2(581, 284)
 
 [node name="Player" parent="." instance=ExtResource("3_idrlp")]
 position = Vector2(216, 458)

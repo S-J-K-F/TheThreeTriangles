@@ -5,6 +5,7 @@
 [ext_resource type="Script" path="res://StartingOrSafeRooms/sr3.gd" id="3_dpdri"]
 [ext_resource type="PackedScene" uid="uid://degxksk82p8yw" path="res://Entities/player.tscn" id="3_tfkau"]
 [ext_resource type="PackedScene" uid="uid://c6q1l4ekp5viy" path="res://Music/hit_ctrl_happy_pixie_town.tscn" id="4_bpjfj"]
+[ext_resource type="PackedScene" path="res://Entities/npc_3.tscn" id="5_cnaag"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c2c3f"]
 texture = ExtResource("1_b6ulo")
@@ -289,6 +290,9 @@ script = ExtResource("3_dpdri")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(64, -35)
 shape = SubResource("CircleShape2D_1xyc1")
+
+[node name="npc_3" parent="." instance=ExtResource("5_cnaag")]
+position = Vector2(147, -37)
 
 [node name="Player" parent="." instance=ExtResource("3_tfkau")]
 position = Vector2(411, 17)
