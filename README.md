@@ -71,7 +71,7 @@ Node Types:
 - Tilemap
 - Sprite2D
 
-Singals:
+Signals:
 - _on_chat_detection_area_body_entered
 - _on_chat_detection_area_area_exited(area:Area2D) -> void
 - _on_timer_timeout() -> void
@@ -87,7 +87,7 @@ Scenes:
 - title_screen
 - main_scene
 - game
-- end_screne
+- end_screen
 - big_door
 - Nightmare_room_1-3
 - Normal_room_1-3
