@@ -1,0 +1,11 @@
+[
+	{"name": "Mom", "text": "Did you sleep well?"},
+	{"name": "Caleb", "text": "Yeah"},
+	{"name": "Mom", "text": "You sure, you don't looks so well?"},
+	{"name": "Caleb", "text": "Yes"},
+	{"name": "Mom", "text": "Well okay, better get ready for school"},
+	{"name": "Caleb", "text": "..."},
+	{"name": "Mom", "text": "Have a good day"},
+	{"name": "Mom", "text": "And stay safe"},
+	{"name": "Caleb", "text": "..."}
+]
