@@ -43,7 +43,7 @@ The Three Triangles is a hybrid between a puzzle game and an RPG. You play as a 
 
 - Tilemaps and Worldbuilding: All tilemaps can be found in each level scene, as well as the "Titles" folder. They are what makes up every single visible object(asterisk). Every tilemap is sourced from the internet.
 
-- Dialogue: You can press "z" to interact with every NPC that shows up in the safe rooms. The amount of people you talk to changes the ending. You can find the dialogue scripts in the dialogue folder and the NPC scripts in the entities folder.
+- Dialogue: You can press "z" to interact with every NPC that shows up in the safe rooms. The amount of people you talk to changes the ending. You can find the dialogue scripts in the dialogue folder and the NPC scripts in the entities folder. (However due to a bug, this was unimplemented)
 
 - GUI (Health, action bar, pause menu, inventory, and dialogue selection): Our health system follows a simple 3 life system, and are displayed via a GUI displaying three hearts. We also have a GUI displaying the three triangles needed to be collected, which is used to depict which of them have yet to be collected and which ones you currently have.
 
@@ -72,7 +72,10 @@ Node Types:
 - Sprite2D
 
 Signals:
-- 
+- _on_chat_detection_area_body_entered
+- _on_chat_detection_area_area_exited(area:Area2D) -> void
+- _on_timer_timeout() -> void
+
 Scenes:
 - Enemy
 - npc
@@ -81,4 +84,16 @@ Scenes:
 - npc_4
 - npc_5
 - player
-- 
+- title_screen
+- main_scene
+- game
+- end_screen
+- big_door
+- Nightmare_room_1-3
+- Normal_room_1-3
+- Dream_room_1-3
+- Safe_room_1-3
+- Starting_room
+- Final_room
+- Happy_Music
+- Unhappy_Music
